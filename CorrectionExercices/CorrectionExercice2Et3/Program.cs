@@ -11,8 +11,14 @@ namespace CorrectionExercice2Et3
             Console.Write("Veuillez saisir votre prénom : ");
             string nomComplet = $"Bonjour {nom}";
             string prenom = Console.ReadLine();
-            nomComplet = $"{nomComplet} {prenom}";
+            Console.Write("Veuillez saisir votre âge : ");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Marié ? ");
+            bool marie = Convert.ToBoolean(Console.ReadLine());
+            nomComplet = $"{nomComplet} {prenom} {age} {marie}";
             Console.WriteLine(nomComplet);
+
+
         }
     }
 }
