@@ -9,8 +9,10 @@ namespace CorrectionExercice2Et3
             Console.Write("Veuillez saisir votre nom : ");
             string nom = Console.ReadLine();
             Console.Write("Veuillez saisir votre prénom : ");
+            string nomComplet = $"Bonjour {nom}";
             string prenom = Console.ReadLine();
-            Console.WriteLine("Bonjour "+nom +" "+prenom);
+            nomComplet = $"{nomComplet} {prenom}";
+            Console.WriteLine(nomComplet);
         }
     }
 }
