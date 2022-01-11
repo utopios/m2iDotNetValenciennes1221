@@ -1,0 +1,15 @@
+C:\Users\ihab\Desktop\M2IDotNetValenciennes\FormationDotNetValenciennes\FormationDotNetValenciennes\bin\Debug\net6.0\FormationDotNetValenciennes.exe
+C:\Users\ihab\Desktop\M2IDotNetValenciennes\FormationDotNetValenciennes\FormationDotNetValenciennes\bin\Debug\net6.0\FormationDotNetValenciennes.deps.json
+C:\Users\ihab\Desktop\M2IDotNetValenciennes\FormationDotNetValenciennes\FormationDotNetValenciennes\bin\Debug\net6.0\FormationDotNetValenciennes.runtimeconfig.json
+C:\Users\ihab\Desktop\M2IDotNetValenciennes\FormationDotNetValenciennes\FormationDotNetValenciennes\bin\Debug\net6.0\FormationDotNetValenciennes.dll
+C:\Users\ihab\Desktop\M2IDotNetValenciennes\FormationDotNetValenciennes\FormationDotNetValenciennes\bin\Debug\net6.0\ref\FormationDotNetValenciennes.dll
+C:\Users\ihab\Desktop\M2IDotNetValenciennes\FormationDotNetValenciennes\FormationDotNetValenciennes\bin\Debug\net6.0\FormationDotNetValenciennes.pdb
+C:\Users\ihab\Desktop\M2IDotNetValenciennes\FormationDotNetValenciennes\FormationDotNetValenciennes\obj\Debug\net6.0\FormationDotNetValenciennes.csproj.AssemblyReference.cache
+C:\Users\ihab\Desktop\M2IDotNetValenciennes\FormationDotNetValenciennes\FormationDotNetValenciennes\obj\Debug\net6.0\FormationDotNetValenciennes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ihab\Desktop\M2IDotNetValenciennes\FormationDotNetValenciennes\FormationDotNetValenciennes\obj\Debug\net6.0\FormationDotNetValenciennes.AssemblyInfoInputs.cache
+C:\Users\ihab\Desktop\M2IDotNetValenciennes\FormationDotNetValenciennes\FormationDotNetValenciennes\obj\Debug\net6.0\FormationDotNetValenciennes.AssemblyInfo.cs
+C:\Users\ihab\Desktop\M2IDotNetValenciennes\FormationDotNetValenciennes\FormationDotNetValenciennes\obj\Debug\net6.0\FormationDotNetValenciennes.csproj.CoreCompileInputs.cache
+C:\Users\ihab\Desktop\M2IDotNetValenciennes\FormationDotNetValenciennes\FormationDotNetValenciennes\obj\Debug\net6.0\FormationDotNetValenciennes.dll
+C:\Users\ihab\Desktop\M2IDotNetValenciennes\FormationDotNetValenciennes\FormationDotNetValenciennes\obj\Debug\net6.0\ref\FormationDotNetValenciennes.dll
+C:\Users\ihab\Desktop\M2IDotNetValenciennes\FormationDotNetValenciennes\FormationDotNetValenciennes\obj\Debug\net6.0\FormationDotNetValenciennes.pdb
+C:\Users\ihab\Desktop\M2IDotNetValenciennes\FormationDotNetValenciennes\FormationDotNetValenciennes\obj\Debug\net6.0\FormationDotNetValenciennes.genruntimeconfig.cache

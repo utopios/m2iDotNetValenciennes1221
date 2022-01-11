@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "09e9Kc89eRyuKn7xvCPqzy80SUNx89sUk9SXN2ISKO6cGNxpWWdCoWEfFNKIJqD7vXsDfigjNjjTvSeaDlFjcg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ihab\\Desktop\\M2IDotNetValenciennes\\ExempleAvecVersion5\\ExempleAvecVersion5\\ExempleAvecVersion5.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ihab\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
