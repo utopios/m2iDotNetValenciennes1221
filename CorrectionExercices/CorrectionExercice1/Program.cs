@@ -11,7 +11,7 @@ namespace CorrectionExercice1
             Console.WriteLine("   -Apprendre le C#");
             Console.WriteLine("   -Apprendre à utiliser visualstudio");
             Console.WriteLine("   -Comprendre l'affichage \"console\"");
-            Console.WriteLine("   -Créer mon repos pour les ranger");
+            Console.WriteLine("   -Créer mon repos \"c:\\MesExercices\\ \" pour les ranger");
             Console.WriteLine("   -Apprécier les fonctionnalités du C#");
             Console.WriteLine("");
             Console.WriteLine("");
