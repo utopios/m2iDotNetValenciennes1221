@@ -54,17 +54,17 @@ namespace FormationDotNetValenciennes
             //}
 
             int numeroMois = 2;
-            string mois = null;
-            //if(numeroMois == 1)
-            //{
-            //    mois = "Janvier";
-            //}
-            //else if(numeroMois == 2)
-            //{
-            //    mois = "Février";
-            //}//....
-            //<=>
-            switch(numeroMois)
+            //string mois = null;
+            ////if(numeroMois == 1)
+            ////{
+            ////    mois = "Janvier";
+            ////}
+            ////else if(numeroMois == 2)
+            ////{
+            ////    mois = "Février";
+            ////}//....
+            ////<=>
+            switch (numeroMois)
             {
                 //avant c#8
                 case (int n) when n >= 1 && n <= 3:
@@ -83,6 +83,8 @@ namespace FormationDotNetValenciennes
                     Console.WriteLine("automne");
                     break;
             }
+
+            //decimal a = 10.4M;
         }
     }
 }
