@@ -36,7 +36,8 @@ namespace FormationDotNetValenciennes
             //int a = 10;
             //bool result = a < 5 || a > 20;
             //Console.WriteLine(result);
-
+            string chaine = "toto";
+            Console.WriteLine(chaine.ToUpper());
             decimal solde = 100;
             if(solde > 0)
             {
