@@ -36,7 +36,7 @@ namespace CorrectionExercice12
                 {
                     categorie = "Minime";
                 }
-                else if (age >= 13)
+                else /*if (age >= 13)*/
                 {
                     categorie = "Cadet";
                 }
