@@ -22,11 +22,17 @@ namespace FormationDotNetValenciennes
 
             //Déclarer une variable pour stocker le nom
             //CamelCase => façon de nommer les variables
-            string nomComplet = "abadi ihab";
-            Console.WriteLine(nomComplet);
-            //nomComplet = @"M. Abadi ihab \\ Tourcoing";
-            nomComplet = "M." + nomComplet;
-            Console.WriteLine(nomComplet);
+            //string nomComplet = "abadi ihab";
+            //Console.WriteLine(nomComplet);
+            ////nomComplet = @"M. Abadi ihab \\ Tourcoing";
+            //nomComplet = "M." + nomComplet;
+            //Console.WriteLine(nomComplet);
+
+            double a = Math.Pow(100,2);
+            Console.WriteLine(a);
+            double b = Math.Sqrt(100);
+            Console.WriteLine(b);
+
         }
     }
 }

@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorrectionEx6", "Correction
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorrectionExercice8", "CorrectionExercice8\CorrectionExercice8.csproj", "{C0463707-932D-4227-8899-634D81BDA5CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorrectionExercice7", "CorrectionExercice7\CorrectionExercice7.csproj", "{4AA3CDB3-B168-44B3-A731-860C3E5DBD9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C0463707-932D-4227-8899-634D81BDA5CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0463707-932D-4227-8899-634D81BDA5CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0463707-932D-4227-8899-634D81BDA5CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AA3CDB3-B168-44B3-A731-860C3E5DBD9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AA3CDB3-B168-44B3-A731-860C3E5DBD9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AA3CDB3-B168-44B3-A731-860C3E5DBD9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AA3CDB3-B168-44B3-A731-860C3E5DBD9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
