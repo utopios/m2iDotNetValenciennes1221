@@ -66,17 +66,21 @@ namespace FormationDotNetValenciennes
             //<=>
             switch(numeroMois)
             {
-                case 1:
-                    Console.WriteLine("Janvier");
+                //avant c#8
+                case (int n) when n >= 1 && n <= 3:
+                    Console.WriteLine("hiver");
                     break;
-                case 2:
-                    Console.WriteLine("Février");
+                //Après c#8
+                //case >=4:
+                //case <= 6:
+                case (int n) when n >= 4 && n <= 6:
+                    Console.WriteLine("printemps");
                     break;
-                case 3:
-                    Console.WriteLine("Mars");
+                case (int n) when n >= 7 && n <= 9:
+                    Console.WriteLine("été");
                     break;
                 default:
-                    Console.WriteLine("erreur numéro mois");
+                    Console.WriteLine("automne");
                     break;
             }
         }
