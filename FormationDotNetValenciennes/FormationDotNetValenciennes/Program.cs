@@ -36,21 +36,48 @@ namespace FormationDotNetValenciennes
             //int a = 10;
             //bool result = a < 5 || a > 20;
             //Console.WriteLine(result);
-            string chaine = "toto";
-            Console.WriteLine(chaine.ToUpper());
-            decimal solde = 100;
-            if(solde > 0)
+            //string chaine = "toto";
+            //Console.WriteLine(chaine.ToUpper());
+            //decimal solde = 100;
+            //if(solde > 0)
+            //{
+            //    Console.WriteLine("Le compte est créditeur");        
+            //    Console.WriteLine("Vous pouvez retirer de l'argent");
+            //}
+            //else if(solde == 0)
+            //{
+            //    Console.WriteLine("Le compte est vide");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Le compte est débiteur");
+            //}
+
+            int numeroMois = 2;
+            string mois = null;
+            //if(numeroMois == 1)
+            //{
+            //    mois = "Janvier";
+            //}
+            //else if(numeroMois == 2)
+            //{
+            //    mois = "Février";
+            //}//....
+            //<=>
+            switch(numeroMois)
             {
-                Console.WriteLine("Le compte est créditeur");        
-                Console.WriteLine("Vous pouvez retirer de l'argent");
-            }
-            else if(solde == 0)
-            {
-                Console.WriteLine("Le compte est vide");
-            }
-            else
-            {
-                Console.WriteLine("Le compte est débiteur");
+                case 1:
+                    Console.WriteLine("Janvier");
+                    break;
+                case 2:
+                    Console.WriteLine("Février");
+                    break;
+                case 3:
+                    Console.WriteLine("Mars");
+                    break;
+                default:
+                    Console.WriteLine("erreur numéro mois");
+                    break;
             }
         }
     }
