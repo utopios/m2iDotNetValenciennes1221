@@ -28,11 +28,29 @@ namespace FormationDotNetValenciennes
             //nomComplet = "M." + nomComplet;
             //Console.WriteLine(nomComplet);
 
-            double a = Math.Pow(100,2);
-            Console.WriteLine(a);
-            double b = Math.Sqrt(100);
-            Console.WriteLine(b);
+            //double a = Math.Pow(100,2);
+            //Console.WriteLine(a);
+            //double b = Math.Sqrt(100);
+            //Console.WriteLine(b);
 
+            //int a = 10;
+            //bool result = a < 5 || a > 20;
+            //Console.WriteLine(result);
+
+            decimal solde = 100;
+            if(solde > 0)
+            {
+                Console.WriteLine("Le compte est créditeur");        
+                Console.WriteLine("Vous pouvez retirer de l'argent");
+            }
+            else if(solde == 0)
+            {
+                Console.WriteLine("Le compte est vide");
+            }
+            else
+            {
+                Console.WriteLine("Le compte est débiteur");
+            }
         }
     }
 }
