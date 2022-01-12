@@ -10,7 +10,7 @@ namespace CorrectionExercice7
             double first = Convert.ToDouble(Console.ReadLine());
             Console.Write("Merci de saisir la longueur du deuxième côté : ");
             double second = Convert.ToDouble(Console.ReadLine());
-            double hypo = Math.Sqrt(Math.Pow(first,2) + Math.Pow(second,2));
+            double hypo = Math.Round(Math.Sqrt(Math.Pow(first,2) + Math.Pow(second,2)),2);
             Console.WriteLine($"La valeur de l'hypothénuse est de {hypo}");
         }
     }
