@@ -11,22 +11,22 @@ namespace CorrectionExercice11
             int entier = Convert.ToInt32(Console.ReadLine());
             Console.Write("Merci de saisir chiffre/nombre diviseur: ");
             int diviseur = Convert.ToInt32(Console.ReadLine());
-            string type;
+            string typeNumeric;
             if(entier <= 9 && entier >= 0)
             {
-                type = "chiffre";
+                typeNumeric = "chiffre";
             }
             else
             {
-                type = "nombre";
+                typeNumeric = "nombre";
             }
             if(entier % diviseur == 0)
             {                
-                Console.WriteLine($"le {type} {entier} est divisible par {diviseur}");
+                Console.WriteLine($"le {typeNumeric} {entier} est divisible par {diviseur}");
             }
             else
             {
-                Console.WriteLine($"le {type} {entier} n'est divisible par {diviseur}");
+                Console.WriteLine($"le {typeNumeric} {entier} n'est divisible par {diviseur}");
             }
         }
     }
