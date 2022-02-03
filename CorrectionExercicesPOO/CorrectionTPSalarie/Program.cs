@@ -32,6 +32,9 @@ namespace CorrectionTPSalarie
             }while(choix != "n");
 
             Console.WriteLine($"Le total des salaires est de : {Salarie.TotalSalaires} euros");
+            Salarie.MettreAjourLeCompteur();
+            Console.WriteLine($"Le nombre de salariés est de : {Salarie.Compteur}");
+            Salarie.MettreAjourLeCompteur(100);
             Console.WriteLine($"Le nombre de salariés est de : {Salarie.Compteur}");
         }
     }

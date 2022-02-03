@@ -54,5 +54,10 @@ namespace CorrectionTPSalarie.Classes
         {
             Console.WriteLine($"Le salaire fixe de {Nom} est de  {Salaire} euros");
         }
+
+        public static void MettreAjourLeCompteur(int val = 0)
+        {
+            compteur = val;
+        }
     }
 }
