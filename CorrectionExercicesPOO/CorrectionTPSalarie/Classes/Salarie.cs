@@ -14,10 +14,26 @@ namespace CorrectionTPSalarie.Classes
         private string nom;
         private decimal salaire;
         private static decimal totalSalaires;
+        private static int compteur = 0;
+        public Salarie()
+        {
+            compteur++;
+        }
+        public Salarie(string matricule, string categorie, string service, string nom, decimal salaire) : this()
+        {   
+            Matricule = matricule;
+            Categorie = categorie;
+            Service = service;
+            Nom = nom;
+            Salaire = salaire;
+        }
+
         public string Matricule { get => matricule; set => matricule = value; }
         public string Categorie { get => categorie; set => categorie = value; }
         public string Service { get => service; set => service = value; }
         public string Nom { get => nom; set => nom = value; }
+
+        public static int Compteur { get => compteur; }
         public decimal Salaire
         {
             get => salaire; set
@@ -30,6 +46,7 @@ namespace CorrectionTPSalarie.Classes
                 totalSalaires += value;
             }
         }
+
 
 
         public static decimal TotalSalaires { get => totalSalaires; }

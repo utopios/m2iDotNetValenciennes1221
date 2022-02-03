@@ -7,6 +7,8 @@ namespace CorrectionTPSalarie
     {
         static void Main(string[] args)
         {
+            Salarie s = new Salarie("m2", "c2", "s1", "toto", 4000);
+            s.AfficherSalaire();
             string choix;
             do
             {
@@ -30,6 +32,7 @@ namespace CorrectionTPSalarie
             }while(choix != "n");
 
             Console.WriteLine($"Le total des salaires est de : {Salarie.TotalSalaires} euros");
+            Console.WriteLine($"Le nombre de salariés est de : {Salarie.Compteur}");
         }
     }
 }
