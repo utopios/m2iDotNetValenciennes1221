@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorrectionTPChaise", "CorrectionTPChaise\CorrectionTPChaise.csproj", "{44AE8924-9269-450B-A681-7F30D574A0CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorrectionPendu", "CorrectionPendu\CorrectionPendu.csproj", "{D6595121-E66C-46FF-BF1C-98A8EC5A224A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{44AE8924-9269-450B-A681-7F30D574A0CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44AE8924-9269-450B-A681-7F30D574A0CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44AE8924-9269-450B-A681-7F30D574A0CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6595121-E66C-46FF-BF1C-98A8EC5A224A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6595121-E66C-46FF-BF1C-98A8EC5A224A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6595121-E66C-46FF-BF1C-98A8EC5A224A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6595121-E66C-46FF-BF1C-98A8EC5A224A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
