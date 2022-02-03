@@ -20,6 +20,10 @@ namespace CorrectionPendu.Classes
         public string MotAtrouve { get => motAtrouve;  }
         public int NbEssai { get => nbEssai; }
 
+        public Pendu()
+        {
+            nbEssai = 10;
+        }
         public bool TestChar(char c)
         {
             ///
