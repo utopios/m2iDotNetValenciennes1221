@@ -27,8 +27,26 @@ namespace CorrectionPendu.Classes
             /// si oui on renvoie vrai, on met à jour le masque
             /// si non on renvoie faux, on change ne nbEssai
             /// 
-
-            return false;
+            bool result = false;
+            string newMasque = "";
+            for(int i = 0; i < MotAtrouve.Length; i++)
+            {
+                if(MotAtrouve[i] == c)
+                {
+                    newMasque += c;
+                    result = true;
+                }
+                else
+                {
+                    newMasque += Masque[i];
+                }
+            }
+            masque = newMasque;
+            if(!result)
+            {
+                nbEssai--;
+            }
+            return result;
         }
 
         public bool TestWin()
@@ -39,15 +57,20 @@ namespace CorrectionPendu.Classes
             /// sinon on renvoie faux
             ///
 
-            return false;
+            return NbEssai > 0 && MotAtrouve == Masque;
 
         }
 
         public void GenererMasque(GenerateurDeMot generateur)
         {
             //On génère le mot aléatoire, grace au generateur, motAtrouve.
-
+            motAtrouve = generateur.Generer();
             //On crée le masque dans masque.
+            masque = "";
+            for(int i = 0; i < MotAtrouve.Length; i++)
+            {
+                masque += "*";
+            }
         }
     }
 }
