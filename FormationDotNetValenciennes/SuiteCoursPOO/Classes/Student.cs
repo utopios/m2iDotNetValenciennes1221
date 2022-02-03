@@ -41,5 +41,10 @@ namespace SuiteCoursPOO.Classes
             base.Afficher();
             Console.WriteLine($"Niveau {Level}");
         }
+
+        public override string ToString()
+        {
+            return "Je suis un etudiant";
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace SuiteCoursPOO
             //Console.WriteLine(s.FirstName);
             //s.Afficher();
             s.AfficherSpecialStudent();
-
+            Console.WriteLine(s);
             Teacher t1 = new Teacher("jean", "dupond", 50, "c#");
             t1.AfficherSpecialTeacher();
             
