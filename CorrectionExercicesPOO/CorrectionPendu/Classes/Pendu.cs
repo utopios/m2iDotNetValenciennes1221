@@ -31,6 +31,7 @@ namespace CorrectionPendu.Classes
             /// si oui on renvoie vrai, on met à jour le masque
             /// si non on renvoie faux, on change ne nbEssai
             /// 
+            
             bool result = false;
             string newMasque = "";
             for(int i = 0; i < MotAtrouve.Length; i++)

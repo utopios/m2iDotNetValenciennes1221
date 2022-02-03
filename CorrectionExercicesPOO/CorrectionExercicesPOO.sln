@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorrectionTPChaise", "Corre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorrectionPendu", "CorrectionPendu\CorrectionPendu.csproj", "{D6595121-E66C-46FF-BF1C-98A8EC5A224A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorrectionTPSalarie", "CorrectionTPSalarie\CorrectionTPSalarie.csproj", "{8731AD55-CB6C-4907-AFF2-48D70D0A5F80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D6595121-E66C-46FF-BF1C-98A8EC5A224A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6595121-E66C-46FF-BF1C-98A8EC5A224A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6595121-E66C-46FF-BF1C-98A8EC5A224A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8731AD55-CB6C-4907-AFF2-48D70D0A5F80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8731AD55-CB6C-4907-AFF2-48D70D0A5F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8731AD55-CB6C-4907-AFF2-48D70D0A5F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8731AD55-CB6C-4907-AFF2-48D70D0A5F80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
