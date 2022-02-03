@@ -27,9 +27,9 @@ namespace SuiteCoursPOO.Classes
         public string LastName { get => lastName; set => lastName = value; }
         public int Age { get => age; set => age = value; }
 
-        public void Afficher()
+        public virtual void Afficher()
         {
-            Console.WriteLine($"{FirstName} {lastName} {Age}");
+            Console.WriteLine($"{FirstName} {LastName} {Age}");
         }
     }
 }

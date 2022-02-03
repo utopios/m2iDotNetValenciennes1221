@@ -30,5 +30,16 @@ namespace SuiteCoursPOO.Classes
         //public string LastName { get => lastName; set => lastName = value; }
         //public int Age { get => age; set => age = value; }
         public int Level { get => level; set => level = value; }
+
+        public void AfficherSpecialStudent()
+        {
+            Console.WriteLine("Special student");
+        }
+
+        public override void Afficher()
+        {
+            base.Afficher();
+            Console.WriteLine($"Niveau {Level}");
+        }
     }
 }
