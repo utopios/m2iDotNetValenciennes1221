@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CorrectionPendu.Classes;
+using System;
 
 namespace CorrectionPendu
 {
@@ -6,7 +7,7 @@ namespace CorrectionPendu
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            new IHM().Start();
         }
     }
 }
