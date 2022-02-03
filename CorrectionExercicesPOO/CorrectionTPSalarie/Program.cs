@@ -28,8 +28,8 @@ namespace CorrectionTPSalarie
                     salarie.AfficherSalaire();
                 }
             }while(choix != "n");
-           
-            
+
+            Console.WriteLine($"Le total des salaires est de : {Salarie.TotalSalaires} euros");
         }
     }
 }
