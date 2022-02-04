@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SuiteCoursPOO.Classes
 {
-    public class Person 
+    public abstract class Person 
     {
         private string firstName;
         private string lastName;

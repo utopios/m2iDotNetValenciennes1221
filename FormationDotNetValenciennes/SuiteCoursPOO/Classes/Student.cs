@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SuiteCoursPOO.Classes
 {
-    public class Student : Person
+    public sealed class Student : Person
     {
         //private string firstName;
         //private string lastName;
@@ -45,6 +45,11 @@ namespace SuiteCoursPOO.Classes
         public override string ToString()
         {
             return "Je suis un etudiant";
+        }
+
+        public override void MethodeAbstract()
+        {
+            
         }
     }
 }

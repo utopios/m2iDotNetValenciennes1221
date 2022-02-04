@@ -24,7 +24,7 @@ namespace SuiteCoursPOO
                 Console.WriteLine(person.GetType());
                 person.Afficher();
             }
-
+            Person p = new Person();
             //Person sp = new Student("titi", "minet", 50, 1);
             //sp.Afficher();          
         }
