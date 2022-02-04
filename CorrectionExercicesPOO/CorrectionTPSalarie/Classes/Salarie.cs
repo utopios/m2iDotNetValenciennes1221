@@ -62,7 +62,7 @@ namespace CorrectionTPSalarie.Classes
 
         public virtual void CalculerSalaire()
         {
-
+            Console.WriteLine($"Le salaire est : {Salaire} euros");
         }
         public override string ToString()
         {

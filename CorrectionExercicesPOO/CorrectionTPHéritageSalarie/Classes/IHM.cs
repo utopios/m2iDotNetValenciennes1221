@@ -55,14 +55,49 @@ namespace CorrectionTPHéritageSalarie.Classes
 
         private void MenuEmploye()
         {
-            Console.WriteLine("1 -- Salairé");
+            Console.WriteLine("1 -- Salarié");
             Console.WriteLine("2 -- Commercial");
             Console.WriteLine("0 -- Retour");
         }
 
         private void ActionAjoutEmploye()
         {
-
+            if (compteur < salaries.Length)
+            {
+                Salarie salarie;
+                MenuEmploye();
+                string choix = Console.ReadLine();
+                if (choix == "1" || choix == "2")
+                {
+                    Console.Write("Le nom complet du salarié : ");
+                    string nom = Console.ReadLine();
+                    Console.Write("Le matricule: ");
+                    string matricule = Console.ReadLine();
+                    Console.Write("Le service du salarié : ");
+                    string service = Console.ReadLine();
+                    Console.Write("La catégorie du salarié : ");
+                    string categorie = Console.ReadLine();
+                    Console.Write("Le salaire fix du salarié : ");
+                    decimal salaire = Convert.ToDecimal(Console.ReadLine());
+                    if (choix == "1")
+                    {
+                        salarie = new Salarie(matricule, categorie, service, nom, salaire);
+                    }
+                    else
+                    {
+                        Console.Write("Le chiffre d'affaire : ");
+                        decimal chiffreAffaire = Convert.ToDecimal(Console.ReadLine());
+                        Console.Write("La commission : ");
+                        decimal commission = Convert.ToDecimal(Console.ReadLine());
+                        salarie = new Commercial(matricule, categorie, service, nom, salaire, chiffreAffaire, commission);
+                    }
+                    salaries[compteur++] = salarie;
+                }
+            }
+            else
+            {
+                Console.WriteLine("L'entreprise ne peut plus avoir de salariés");
+            }      
         }
 
         private void ActionAfficherSalaireEmployes()
