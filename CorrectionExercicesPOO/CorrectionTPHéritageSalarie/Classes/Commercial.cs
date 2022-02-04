@@ -28,7 +28,7 @@ namespace CorrectionTPHéritageSalarie.Classes
         public override void CalculerSalaire()
         {
             decimal salaireTotal = Salaire + ChiffreAffaire * Commission / 100;
-            Console.WriteLine($"Le salaire total est : {salaireTotal} euros");
+            Console.WriteLine($"Le salaire total de {this} est : {salaireTotal} euros");
         }
 
         public override string ToString()

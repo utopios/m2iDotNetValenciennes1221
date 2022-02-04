@@ -62,11 +62,11 @@ namespace CorrectionTPSalarie.Classes
 
         public virtual void CalculerSalaire()
         {
-            Console.WriteLine($"Le salaire est : {Salaire} euros");
+            Console.WriteLine($"Le salaire de {this} est : {Salaire} euros");
         }
         public override string ToString()
         {
-            return $"Nom {Nom}, Matrcicule {Matricule}, Catégorie {Categorie}, Service {Service}, Salaire {Salaire} euros";
+            return $"{Nom}, Matrcicule {Matricule}, Catégorie {Categorie}, Service {Service}, Salaire fix {Salaire} euros";
         }
     }
 }

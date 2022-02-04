@@ -89,7 +89,7 @@ namespace CorrectionTPHéritageSalarie.Classes
                         decimal chiffreAffaire = Convert.ToDecimal(Console.ReadLine());
                         Console.Write("La commission : ");
                         decimal commission = Convert.ToDecimal(Console.ReadLine());
-                        salarie = new Commercial(matricule, categorie, service, nom, salaire, chiffreAffaire, commission);
+                        salarie = new Commercial(matricule, categorie, service, nom, salaire, commission, chiffreAffaire);
                     }
                     salaries[compteur++] = salarie;
                 }
@@ -102,7 +102,11 @@ namespace CorrectionTPHéritageSalarie.Classes
 
         private void ActionAfficherSalaireEmployes()
         {
-
+            for(int i = 0; i < compteur; i++)
+            {
+                //Console.WriteLine(salaries[i]);
+                salaries[i].CalculerSalaire();
+            }
         }
 
         private void ActionRechercheEmployes()
