@@ -59,5 +59,14 @@ namespace CorrectionTPSalarie.Classes
         {
             compteur = val;
         }
+
+        public virtual void CalculerSalaire()
+        {
+
+        }
+        public override string ToString()
+        {
+            return $"Nom {Nom}, Matrcicule {Matricule}, Catégorie {Categorie}, Service {Service}, Salaire {Salaire} euros";
+        }
     }
 }
