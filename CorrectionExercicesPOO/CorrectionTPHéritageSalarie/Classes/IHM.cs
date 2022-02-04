@@ -107,6 +107,14 @@ namespace CorrectionTPHéritageSalarie.Classes
                 //Console.WriteLine(salaries[i]);
                 salaries[i].CalculerSalaire();
             }
+
+            //foreach(Salarie s in salaries)
+            //{
+            //    if(s != null)
+            //    {
+            //        s.CalculerSalaire();
+            //    }
+            //}
         }
 
         private void ActionRechercheEmployes()
