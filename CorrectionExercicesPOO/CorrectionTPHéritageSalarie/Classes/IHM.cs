@@ -119,7 +119,25 @@ namespace CorrectionTPHéritageSalarie.Classes
 
         private void ActionRechercheEmployes()
         {
-
+            Console.Write("Merci de saisir le nom du salarié : ");
+            string nom = Console.ReadLine();
+            Salarie salarie = null;
+            for(int i = 0;i  < compteur;i++)
+            {
+                if(salaries[i].Nom == nom)
+                {
+                    salarie = salaries[i];
+                    break;
+                }
+            }
+            if(salarie != null)
+            {
+                salarie.CalculerSalaire();
+            }
+            else
+            {
+                Console.WriteLine("Aucun salarié avec ce nom");
+            }
         }
 
         private void Continuer()
