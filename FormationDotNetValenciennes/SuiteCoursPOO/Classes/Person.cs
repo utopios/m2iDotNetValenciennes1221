@@ -31,5 +31,8 @@ namespace SuiteCoursPOO.Classes
         {
             Console.WriteLine($"{FirstName} {LastName} {Age}");
         }
+
+        public abstract void MethodeAbstract();
+       
     }
 }

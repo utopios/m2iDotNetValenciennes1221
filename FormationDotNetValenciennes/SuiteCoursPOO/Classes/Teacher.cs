@@ -20,5 +20,10 @@ namespace SuiteCoursPOO.Classes
         {
             Console.WriteLine("Special teacher");
         }
+
+        public override void MethodeAbstract()
+        {
+            
+        }
     }
 }
