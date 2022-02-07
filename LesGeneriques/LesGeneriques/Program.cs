@@ -101,6 +101,57 @@ namespace LesGeneriques
             Console.WriteLine($"L'élément en place 3 de la pile est {pileVoiture.Get(2)}");
             #endregion
 
+            #region Les dictionnaires
+            Console.WriteLine("\n*** Les Dictionnaires<T> ***");
+            Console.WriteLine("\nAvec des type Personne : ");
+            Dictionary<string, Personne> annuaire = new Dictionary<string, Personne>();
+            annuaire.Add("06 01 02 03 04", new Personne { Prenom = "Nicolas", Numero="06 01 02 03 04" });
+            annuaire.Add("06 09 08 07 06", new Personne { Prenom = "Jeanne", Numero ="06 09 08 07 06"});
+
+            Personne p = annuaire["06 01 02 03 04"];
+            Console.WriteLine(p);
+            #endregion
+
+            #region Les List<T>
+            Console.WriteLine("\n*** Les List<T> ***");
+            Console.WriteLine("\nAvec des type int : ");
+            List<int> listeEntier = new List<int>();
+            listeEntier.Add(10);
+            listeEntier.Add(20);
+            listeEntier.Add(30);
+            Console.WriteLine($"La liste contient {listeEntier.Count} entiers");
+            Console.WriteLine("=====================");
+            foreach (int entier in listeEntier)
+            {
+                Console.WriteLine(entier);
+            }
+            Console.WriteLine("=====================");
+            Console.WriteLine("Je retire la valeur 10 : ");
+            listeEntier.Remove(10);
+            Console.WriteLine($"La liste contient {listeEntier.Count} entiers");
+            foreach (int entier in listeEntier)
+            {
+                Console.WriteLine(entier);
+            }
+
+            Console.WriteLine("*********************************************");
+
+            Console.WriteLine("\nAvec des type Voiture : ");
+            List<Voiture> listVoiture = new List<Voiture>();
+            listVoiture.Add(new Voiture("ceed", "Blanche", 45, 900));
+            listVoiture.Add(new Voiture("Kuga", "Noir", 50, 800));
+            listVoiture.Add(new Voiture("Espace", "Bleu", 80, 1200));
+
+            Console.WriteLine("=====================");
+            foreach (Voiture v in listVoiture)
+            {
+                Console.WriteLine(v);
+            }      
+
+            #endregion
+
+
+
             Console.WriteLine("Appuyez sur Enter pour fermer le programme...");
             Console.Read();
         }
