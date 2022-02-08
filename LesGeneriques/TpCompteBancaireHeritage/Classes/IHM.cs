@@ -44,7 +44,15 @@ namespace TpCompteBancaireHeritage.Classes
 
         private void Menu()
         {
+            Console.WriteLine("\n--------------- Banque Peu Populaire -------------\n");
+            Console.WriteLine("1- Créer un compte bancaire");
+            Console.WriteLine("2- Effectuer un dépôt");
+            Console.WriteLine("3- Effectuer un retrait");
+            Console.WriteLine("4- Opérations et solde");
+            Console.WriteLine("5- Calcul Interêts\n");
+            Console.WriteLine("0---Quitter\n");
 
+            Console.Write("Faites votre choix : ");
         }
 
         public void ActionCreationCompte()
@@ -84,7 +92,7 @@ namespace TpCompteBancaireHeritage.Classes
                 // Afficher le compte (fait)
             }
             else            
-                Console.WriteLine("Erreur, veuille choisir un compte valable...");           
+                Console.WriteLine("Erreur, veuillez choisir un compte valable...");           
         }
 
         public void ActionCalculInterets()
