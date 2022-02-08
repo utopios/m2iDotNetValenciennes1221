@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LesGeneriques", "LesGeneriques\LesGeneriques.csproj", "{B42FC563-6A3F-4F75-BC0A-1A428D8051AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LesGeneriques", "LesGeneriques\LesGeneriques.csproj", "{B42FC563-6A3F-4F75-BC0A-1A428D8051AC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cours", "Cours", "{2AA98A97-D9FD-4437-B5BB-8004FA34779D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tp", "Tp", "{99365DD3-5DF7-4DF1-9735-529B8FC15C7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpTheGreatTP", "TpTheGreatTP\TpTheGreatTP.csproj", "{C1296B19-4DBA-4011-8833-5EAB5FFBBE74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TpTheGreatTP", "TpTheGreatTP\TpTheGreatTP.csproj", "{C1296B19-4DBA-4011-8833-5EAB5FFBBE74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpCompteBancaireHeritage", "TpCompteBancaireHeritage\TpCompteBancaireHeritage.csproj", "{78F35EC4-EF3A-498A-836C-1BC219263530}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{C1296B19-4DBA-4011-8833-5EAB5FFBBE74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1296B19-4DBA-4011-8833-5EAB5FFBBE74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1296B19-4DBA-4011-8833-5EAB5FFBBE74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78F35EC4-EF3A-498A-836C-1BC219263530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F35EC4-EF3A-498A-836C-1BC219263530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F35EC4-EF3A-498A-836C-1BC219263530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F35EC4-EF3A-498A-836C-1BC219263530}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B42FC563-6A3F-4F75-BC0A-1A428D8051AC} = {2AA98A97-D9FD-4437-B5BB-8004FA34779D}
 		{C1296B19-4DBA-4011-8833-5EAB5FFBBE74} = {99365DD3-5DF7-4DF1-9735-529B8FC15C7B}
+		{78F35EC4-EF3A-498A-836C-1BC219263530} = {99365DD3-5DF7-4DF1-9735-529B8FC15C7B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {166A154C-763A-498A-9A9B-E77B3743B2AE}
