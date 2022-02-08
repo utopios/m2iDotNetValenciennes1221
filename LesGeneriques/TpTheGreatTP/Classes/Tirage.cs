@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace TpTheGreatTP.Classes
 {
-    internal class Tirage
+    class Tirage
     {
-        private static List<string> originList;
-        private static List<string> drawedList;
+        private List<string> originList;
+        private List<string> drawedList;
+
+        public List<string> OriginList { get => originList; set => originList = value; }
+        public List<string> DrawedList { get => drawedList; set => drawedList = value; }
 
         public Tirage()
         {
@@ -18,21 +21,21 @@ namespace TpTheGreatTP.Classes
 
         public void Init()
         {
-            originList = new List<string>() { "Guillaume", "Romaric", "Michel", "Yoann", "Christophe", "Jonathan", "Abdelkader", "Aboubacar", "Al-Douri", "Samia", "Simon-Pierre", "Sofiane", "Yannick", "Nisar", "Meziane" };
-            drawedList = new List<string>();
+            OriginList = new List<string>() { "Guillaume", "Romaric", "Michel", "Yoann", "Christophe", "Jonathan", "Abdelkader", "Aboubacar", "Al-Douri", "Samia", "Simon-Pierre", "Sofiane", "Yannick", "Nisar", "Meziane" };
+            DrawedList = new List<string>();
         }
 
         public string Pull()
         {
             string prenom;
-            if (originList.Count > 0)
+            if (OriginList.Count > 0)
             {
                 Random rnd = new Random();
 
                 do
                 {
-                    prenom = originList[rnd.Next(originList.Count)];
-                } while (drawedList.Find(x => x == prenom) == prenom);
+                    prenom = OriginList[rnd.Next(OriginList.Count)];
+                } while (DrawedList.Find(x => x == prenom) == prenom);
             }
             else
             {
@@ -44,11 +47,11 @@ namespace TpTheGreatTP.Classes
 
         public void AddPulled(string prenom)
         {
-            drawedList.Add(prenom);
+            DrawedList.Add(prenom);
 
-            if (originList.Count == drawedList.Count)
+            if (OriginList.Count == DrawedList.Count)
             {
-                drawedList.Clear();
+                DrawedList.Clear();
             }
         }
     }
