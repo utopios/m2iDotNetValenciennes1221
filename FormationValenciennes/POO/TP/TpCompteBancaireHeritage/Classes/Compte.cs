@@ -32,22 +32,31 @@ namespace TpCompteBancaireHeritage.Classes
         internal List<Operation> Operations { get => operations; set => operations = value; }
         public static int Counter { get => counter; }
 
-        public virtual bool Depot(Operation o)
+        public virtual bool Depot(Operation operation)
         {
-            // Développer les instruction pour effectuer un dépot sur le compte
-            return true;    
+            if (operation.Montant > 0)
+            {
+                Operations.Add(operation);
+                Solde += operation.Montant;
+                return true;
+            }
+            return false;    
         }
 
-        public virtual bool Retrait(Operation o)
+        public virtual bool Retrait(Operation operation)
         {
-            // Développer les instructions pour effectuer un retrait sur le compte
-            return true;
+            if (operation.Montant < 0)
+            {
+                Operations.Add(operation);
+                Solde += operation.Montant;
+                return true;
+            }
+            return false;
         }
 
-        public virtual bool AjouterCompte()
-        {
-            // Développer les instructions pour eajouter un compte à la liste compte
-            return true;
+        public virtual bool AjouterCompte(Bank bank)
+        {            
+            return bank.AjouterCompte(this); ;
         }
         
         public static Compte RechercherCompte(Bank bank,int id)
@@ -57,7 +66,7 @@ namespace TpCompteBancaireHeritage.Classes
         public override string ToString()
         {
             string result = $"Client : {Client}\n";
-            result += $"\n\t\t\t\t\t\tSolde {Solde} Euros";
+            result += $"\n\t\t\t\t\t\tSolde : {Solde} Euros";
             result += $"\n------------------- Operations -------------------\n";
             Operations.ForEach(o =>
             {

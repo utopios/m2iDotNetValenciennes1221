@@ -52,11 +52,12 @@ namespace Heritage
 
             // Conversion
             for (int i = 0; i < tab.Length; i++)
-            {
+            {                
                 //1ere Solution Boxing => Unboxing
                 if (tab[i].GetType()==typeof(Chien))
                 {
                     Chien c = (Chien)tab[i];
+                    c.Aboyer();
                     Afficher(c);
                 }
 

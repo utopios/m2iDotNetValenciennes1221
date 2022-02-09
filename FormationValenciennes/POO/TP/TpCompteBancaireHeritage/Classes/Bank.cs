@@ -19,15 +19,20 @@ namespace TpCompteBancaireHeritage.Classes
 
         public bool AjouterCompte(Compte compte)
         {
-            // Instruction pour ajouter un compte à la liste de compte 
-            return true;
+            int avant = Comptes.Count;
+            Comptes.Add(compte);
+            int apres = Comptes.Count;
+            return apres - avant == 1? true : false;
         }
 
         public Compte RechercherCompte(int id)
         {
-            // Ecrire les instructions permettant de rechercher un compte dans la liste des comptes
-            Compte compte = new Compte();
-            return compte;
+            //Compte c = null;
+            //c = Comptes.Find(c => c.Id == id);
+            //return c;
+
+            // Ecriture simplifiée
+            return Comptes.Find(c => c.Id == id);
         }
     }
 }

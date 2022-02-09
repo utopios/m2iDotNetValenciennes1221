@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TpCompteBancaireHeritage.Data;
 
 namespace TpCompteBancaireHeritage.Classes
 {
@@ -13,6 +14,7 @@ namespace TpCompteBancaireHeritage.Classes
         public IHM()
         {
             bank = new Bank();
+            ClientCompteInjection.Injecter(bank);
         }
 
         public void Start()
@@ -57,8 +59,11 @@ namespace TpCompteBancaireHeritage.Classes
 
         public void ActionCreationCompte()
         {
-            // Création d'un client
+            Client client = new Client();
 
+            Compte compte = new Compte();   
+
+            compte.AjouterCompte(bank);
             // Création du compte (Compte, CompteEpargne,ComptePayant)
         }
 
