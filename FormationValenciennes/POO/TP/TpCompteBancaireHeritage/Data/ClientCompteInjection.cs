@@ -19,7 +19,7 @@ namespace TpCompteBancaireHeritage.Data
 
 
             // Création des Comptes
-            Compte compte1 = new(150, c1);
+            Compte compte1 = new (150, c1);
             Compte compte2 = new CompteEpargne(150, c2,4);
             Compte compte3 = new ComptePayant(150, c3,2);
 
