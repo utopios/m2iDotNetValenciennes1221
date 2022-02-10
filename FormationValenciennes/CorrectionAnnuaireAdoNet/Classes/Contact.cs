@@ -19,6 +19,8 @@ namespace CorrectionAnnuaireAdoNet.Classes
         private static SqlConnection connection;
         private static SqlCommand command;
         private static SqlDataReader reader;
+
+        public List<Email> Emails { get; set; }
         public Contact()
         {
         }
