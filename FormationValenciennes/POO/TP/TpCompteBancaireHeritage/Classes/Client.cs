@@ -45,5 +45,10 @@ namespace TpCompteBancaireHeritage.Classes
         {
             return $"Id: {Id} - Nom : {Nom}, Prénom :{Prenom}, Téléphone : {Telephone}";
         }
+
+        public bool Save()
+        {
+            return false;
+        }
     }
 }

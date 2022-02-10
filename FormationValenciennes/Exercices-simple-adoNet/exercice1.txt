@@ -11,3 +11,20 @@ En utilisant le début du cours ADO.NET, proposez, dans une application console,
 En reprenant le TP compte bancaire, on souhaite ajouter une couche base de données.
 1 - Modéliser les tables sql en fonction des modèles de notre TP (dans un premier temps, on garde uniquement le compte courant).
 2 - Ajouter aux modèles les méthodes nécessaires à l'interaction avec la base de données.  
+
+Table Client
+id,  prénom, nom, telephone.
+
+Table compte 
+id, solde, client_id, date_creation
+
+"Dans le cadre d'un compte avec plusieurs clients.
+Table Compte 
+id, solde, date_creation
+Table compte_client
+id, compte_id, client_id"
+
+Table Opération
+id, montant, date_opération, compte_id
+
+

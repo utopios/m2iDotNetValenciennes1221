@@ -8,15 +8,15 @@ using System.Threading.Tasks;
 
 namespace CorrectionAnnuaireAdoNet.Classes
 {
-    public class Email
+    public class Email: BaseModel<Email>
     {
         private int id;
         private string mail;
         private int contactId;
-        private static string request;
-        private static SqlConnection connection;
-        private static SqlCommand command;
-        private static SqlDataReader reader;
+        //private static string request;
+        //private static SqlConnection connection;
+        //private static SqlCommand command;
+        //private static SqlDataReader reader;
 
         public int Id { get => id; set => id = value; }
         public string Mail { get => mail; set => mail = value; }
@@ -34,7 +34,7 @@ namespace CorrectionAnnuaireAdoNet.Classes
             ContactId = contactId;
         }
 
-        public bool Save()
+        public override bool Save()
         {
             request = "INSERT INTO email (contact_id, mail)  OUTPUT INSERTED.ID values (@contact_id, @mail)";
             connection = DataBaseTools.Connection;
@@ -68,5 +68,16 @@ namespace CorrectionAnnuaireAdoNet.Classes
             return emails;
         }
 
+        
+
+        public override Email GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override List<Email> GetAll()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
