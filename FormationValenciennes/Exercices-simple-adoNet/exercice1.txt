@@ -1,0 +1,7 @@
+=== Exercice 1 ADO.NET =====
+En utilisant le début du cours ADO.NET, proposez, dans une application console,
+ un menu qui permet de
+1 - Ajouter un utilisateur
+2 - Supprimer un utilisateur par son id
+3 - Rechercher un utilisateur par son téléphone
+4 - Modifier un utilisateur 
