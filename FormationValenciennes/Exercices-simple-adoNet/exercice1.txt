@@ -5,3 +5,9 @@ En utilisant le début du cours ADO.NET, proposez, dans une application console,
 2 - Supprimer un utilisateur par son id
 3 - Rechercher un utilisateur par son téléphone
 4 - Modifier un utilisateur 
+
+
+=== Suite TP Compte bancaire ====
+En reprenant le TP compte bancaire, on souhaite ajouter une couche base de données.
+1 - Modéliser les tables sql en fonction des modèles de notre TP (dans un premier temps, on garde uniquement le compte courant).
+2 - Ajouter aux modèles les méthodes nécessaires à l'interaction avec la base de données.  
