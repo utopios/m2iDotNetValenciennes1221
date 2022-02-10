@@ -56,21 +56,79 @@ namespace CorrectionAnnuaireAdoNet.Classes
 
         public bool Update()
         {
-            return false;
+            //logique de mise à jour
+            request = "UPDATE utilisateur set nom=@nom, prenom=@prenom, telephone=@telephone, email=@email where id=@id";
+            connection = DataBaseTools.Connection;
+            command = new SqlCommand(request, connection);
+            command.Parameters.Add(new SqlParameter("@nom", LastName));
+            command.Parameters.Add(new SqlParameter("@prenom", FirstName));
+            command.Parameters.Add(new SqlParameter("@email", Email));
+            command.Parameters.Add(new SqlParameter("@telephone", Phone));
+            command.Parameters.Add(new SqlParameter("@id", Id));
+            connection.Open();
+            int nbRow = command.ExecuteNonQuery();
+            command.Dispose();
+            connection.Close();
+            return nbRow == 1;        
         }
 
         public bool Delete()
         {
-            return false;
+            //logique  pour supprimer
+            request = "DELETE FROM utilisateur where id=@id";
+            connection = DataBaseTools.Connection;
+            command = new SqlCommand(request, connection);         
+            command.Parameters.Add(new SqlParameter("@id", Id));
+            connection.Open();
+            int nbRow = command.ExecuteNonQuery();
+            command.Dispose();
+            connection.Close();
+            return nbRow == 1;          
         }
 
         public static Contact SearchByPhone(string phone)
         {
-            return null;
+            //logique pour chercher un contact par téléphone
+            Contact contact = null;
+            request = "SELECT id, nom, prenom, email from utilisateur where telephone=@phone";
+            connection = DataBaseTools.Connection;
+            command = new SqlCommand(request, connection);
+            command.Parameters.Add(new SqlParameter("@phone", phone));
+            connection.Open();
+            reader = command.ExecuteReader();
+            if (reader.Read())
+            {
+               contact = new Contact(reader.GetInt32(0), reader.GetString(2), reader.GetString(1), reader.GetString(3), phone);
+            }
+            reader.Close();
+            command.Dispose();
+            connection.Close();
+            return contact;
         }
         public static List<Contact> GetContacts()
         {
-            return null;
+            //Logique pour chercher liste des contacts
+            List<Contact> contacts = new List<Contact>();
+            request = "SELECT id, nom, prenom, email,telephone from utilisateur";
+            connection = DataBaseTools.Connection;
+            command = new SqlCommand(request, connection);
+
+            connection.Open();
+            reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                Contact contact = new Contact(reader.GetInt32(0), reader.GetString(2), reader.GetString(1), reader.GetString(3), reader.GetString(4));
+                contacts.Add(contact);
+            }
+            reader.Close();
+            command.Dispose();
+            connection.Close();
+            return contacts;
+        }
+
+        public override string ToString()
+        {
+            return $"{FirstName} {LastName} {Email} {Phone}";
         }
     }
 }
