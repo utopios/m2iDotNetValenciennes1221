@@ -13,7 +13,7 @@ namespace CorrectionAnnuaireAdoNet.Classes
         private int id;
         private string firstName;
         private string lastName;
-        private string email;
+        //private string email;
         private string phone;
         private static string request;
         private static SqlConnection connection;
@@ -25,29 +25,29 @@ namespace CorrectionAnnuaireAdoNet.Classes
         {
         }
 
-        public Contact(int id, string firstName, string lastName, string email, string phone)
+        public Contact(int id, string firstName, string lastName, string phone)
         {
             this.Id = id;
             this.FirstName = firstName;
             this.LastName = lastName;
-            this.Email = email;
+            //this.Email = email;
             this.Phone = phone;
         }
 
         public int Id { get => id; set => id = value; }
         public string FirstName { get => firstName; set => firstName = value; }
         public string LastName { get => lastName; set => lastName = value; }
-        public string Email { get => email; set => email = value; }
+       // public string Email { get => email; set => email = value; }
         public string Phone { get => phone; set => phone = value; }
 
         public bool Save()
         {
-            request = "INSERT INTO utilisateur (nom, prenom, email, telephone) OUTPUT INSERTED.ID values (@nom, @prenom, @email, @telephone)";
+            request = "INSERT INTO utilisateur (nom, prenom, telephone) OUTPUT INSERTED.ID values (@nom, @prenom, @telephone)";
             connection = DataBaseTools.Connection;
             command = new SqlCommand(request, connection);
             command.Parameters.Add(new SqlParameter("@nom", LastName));
             command.Parameters.Add(new SqlParameter("@prenom", FirstName));
-            command.Parameters.Add(new SqlParameter("@email", Email));
+            //command.Parameters.Add(new SqlParameter("@email", Email));
             command.Parameters.Add(new SqlParameter("@telephone", Phone));
             connection.Open();
             Id = (int)command.ExecuteScalar();
@@ -59,12 +59,12 @@ namespace CorrectionAnnuaireAdoNet.Classes
         public bool Update()
         {
             //logique de mise à jour
-            request = "UPDATE utilisateur set nom=@nom, prenom=@prenom, telephone=@telephone, email=@email where id=@id";
+            request = "UPDATE utilisateur set nom=@nom, prenom=@prenom, telephone=@telephone where id=@id";
             connection = DataBaseTools.Connection;
             command = new SqlCommand(request, connection);
             command.Parameters.Add(new SqlParameter("@nom", LastName));
             command.Parameters.Add(new SqlParameter("@prenom", FirstName));
-            command.Parameters.Add(new SqlParameter("@email", Email));
+            //command.Parameters.Add(new SqlParameter("@email", Email));
             command.Parameters.Add(new SqlParameter("@telephone", Phone));
             command.Parameters.Add(new SqlParameter("@id", Id));
             connection.Open();
@@ -92,7 +92,7 @@ namespace CorrectionAnnuaireAdoNet.Classes
         {
             //logique pour chercher un contact par téléphone
             Contact contact = null;
-            request = "SELECT id, nom, prenom, email from utilisateur where telephone=@phone";
+            request = "SELECT id, nom, prenom, from utilisateur where telephone=@phone";
             connection = DataBaseTools.Connection;
             command = new SqlCommand(request, connection);
             command.Parameters.Add(new SqlParameter("@phone", phone));
@@ -100,11 +100,13 @@ namespace CorrectionAnnuaireAdoNet.Classes
             reader = command.ExecuteReader();
             if (reader.Read())
             {
-               contact = new Contact(reader.GetInt32(0), reader.GetString(2), reader.GetString(1), reader.GetString(3), phone);
+               contact = new Contact(reader.GetInt32(0), reader.GetString(2), reader.GetString(1), phone);
             }
             reader.Close();
             command.Dispose();
             connection.Close();
+            if (contact != null)
+                contact.Emails = Email.GetContactEmails(contact.Id);
             return contact;
         }
         public static List<Contact> GetContacts()
@@ -119,7 +121,7 @@ namespace CorrectionAnnuaireAdoNet.Classes
             reader = command.ExecuteReader();
             while (reader.Read())
             {
-                Contact contact = new Contact(reader.GetInt32(0), reader.GetString(2), reader.GetString(1), reader.GetString(3), reader.GetString(4));
+                Contact contact = new Contact(reader.GetInt32(0), reader.GetString(2), reader.GetString(1), reader.GetString(4));
                 contacts.Add(contact);
             }
             reader.Close();
@@ -130,7 +132,7 @@ namespace CorrectionAnnuaireAdoNet.Classes
 
         public override string ToString()
         {
-            return $"{FirstName} {LastName} {Email} {Phone}";
+            return $"{FirstName} {LastName} {Phone}";
         }
     }
 }

@@ -44,8 +44,8 @@ namespace CorrectionAnnuaireAdoNet.Classes
             contact.LastName = Console.ReadLine();
             Console.Write("Merci de saisir le prénom : ");
             contact.FirstName = Console.ReadLine();
-            Console.Write("Merci de saisir l'email : ");
-            contact.Email = Console.ReadLine();
+            //Console.Write("Merci de saisir l'email : ");
+            //contact.Email = Console.ReadLine();
             Console.Write("Merci de saisir le téléphone : ");
             contact.Phone = Console.ReadLine();
             if(contact.Save())
@@ -84,8 +84,8 @@ namespace CorrectionAnnuaireAdoNet.Classes
                 contact.LastName = Console.ReadLine();
                 Console.Write("Merci de saisir le nouveau prénom : ");
                 contact.FirstName = Console.ReadLine();
-                Console.Write("Merci de saisir le nouveau email : ");
-                contact.Email = Console.ReadLine();
+                //Console.Write("Merci de saisir le nouveau email : ");
+                //contact.Email = Console.ReadLine();
                 Console.Write("Merci de saisir le nouveau téléphone : ");
                 contact.Phone = Console.ReadLine();
                 if (contact.Update())
