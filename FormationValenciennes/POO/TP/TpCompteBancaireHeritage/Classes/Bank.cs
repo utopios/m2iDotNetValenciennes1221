@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TpCompteBancaireHeritage.DAO;
 
 namespace TpCompteBancaireHeritage.Classes
 {
-    internal class Bank
+    public class Bank
     {
         private List<Compte> comptes;
-
+        private CompteDAO compteDAO;
         internal List<Compte> Comptes { get => comptes; set => comptes = value; }
 
         public Bank()
@@ -23,7 +24,8 @@ namespace TpCompteBancaireHeritage.Classes
             //Comptes.Add(compte);
             //int apres = Comptes.Count;
             //return apres - avant == 1? true : false;
-            return compte.Client.Save() && compte.Save();
+            compteDAO = new CompteDAO();
+            return compte.Client.Save() && compteDAO.Save(compte);
 
         }
 
@@ -34,8 +36,9 @@ namespace TpCompteBancaireHeritage.Classes
             //return c;
 
             // Ecriture simplifiée
-           // return Comptes.Find(c => c.Id == id);
-           return Compte.GetCompteById(id);
+            // return Comptes.Find(c => c.Id == id);
+            compteDAO = new CompteDAO();
+            return compteDAO.Get(id);
         }
     }
 }

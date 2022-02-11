@@ -8,7 +8,7 @@ using TpCompteBancaireHeritage.Tools;
 
 namespace TpCompteBancaireHeritage.Classes
 {
-    internal class Client : BaseModel
+    public class Client : BaseModel
     {
         private int id;
         private string nom;

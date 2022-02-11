@@ -8,7 +8,7 @@ using TpCompteBancaireHeritage.Tools;
 
 namespace TpCompteBancaireHeritage.Classes
 {
-    internal class Operation : BaseModel
+    public class Operation : BaseModel
     {
         private int id;
         private DateTime date;
