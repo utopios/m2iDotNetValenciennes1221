@@ -30,4 +30,9 @@ id, montant, date_opération, compte_id
 3 - Ajouter des classes pour la gestion dao de client et opération.
 
 
+==Suite TP Forum===
+En reprenant le TP Forum, on souhaite ajouter une couche de base de données
+1 - Modéliser les tables nécessaires au fonctionnement de l'application.
+2- Ajouter une couche DAO pour intéragir avec la base de données
+
 
