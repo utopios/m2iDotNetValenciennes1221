@@ -17,6 +17,7 @@ namespace TpCompteBancaireHeritage.Classes
         private List<Operation> operations;
         private static int counter = 0;
         private CompteDAO compteDAO;
+        private OperationDAO operationDAO;
 
         public Compte()
         {
@@ -39,9 +40,11 @@ namespace TpCompteBancaireHeritage.Classes
         public virtual bool Depot(Operation operation)
         {
             compteDAO = new CompteDAO();
+            operationDAO = new OperationDAO();
             if (operation.Montant > 0)
             {
-                if(operation.Save(Id))
+                //if(operation.Save(Id))
+                if(operationDAO.Save(operation, Id))
                 {
                     Operations.Add(operation);
                     Solde += operation.Montant;
@@ -54,9 +57,10 @@ namespace TpCompteBancaireHeritage.Classes
         public virtual bool Retrait(Operation operation)
         {
             compteDAO = new CompteDAO();
+            operationDAO = new OperationDAO();
             if (operation.Montant < 0 && Solde >= Math.Abs(operation.Montant))
             {
-                if (operation.Save(Id))
+                if (operationDAO.Save(operation, Id))
                 {
                     Operations.Add(operation);
                     Solde += operation.Montant;

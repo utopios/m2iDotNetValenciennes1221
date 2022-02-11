@@ -11,6 +11,7 @@ namespace TpCompteBancaireHeritage.Classes
     {
         private List<Compte> comptes;
         private CompteDAO compteDAO;
+        private ClientDAO clientDAO;
         internal List<Compte> Comptes { get => comptes; set => comptes = value; }
 
         public Bank()
@@ -25,7 +26,8 @@ namespace TpCompteBancaireHeritage.Classes
             //int apres = Comptes.Count;
             //return apres - avant == 1? true : false;
             compteDAO = new CompteDAO();
-            return compte.Client.Save() && compteDAO.Save(compte);
+            clientDAO = new ClientDAO();
+            return clientDAO.Save(compte.Client) && compteDAO.Save(compte);
 
         }
 

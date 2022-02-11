@@ -37,10 +37,12 @@ namespace TpCompteBancaireHeritage.DAO
             }
             reader.Close();
             command.Dispose();
+            ClientDAO clientDAO = new ClientDAO();
+            OperationDAO operationDAO = new OperationDAO();
             if (compte != null)
             {
-                compte.Client = Client.GetClientById(clientId);
-                compte.Operations = Operation.GetOperations(compte.Id);
+                compte.Client = clientDAO.Get(clientId);
+                compte.Operations = operationDAO.GetAll(compte.Id);
             }
             return compte;
         }
