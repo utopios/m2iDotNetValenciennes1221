@@ -1,12 +1,14 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TpCompteBancaireHeritage.Tools;
 
 namespace TpCompteBancaireHeritage.Classes
 {
-    internal class Client
+    internal class Client : BaseModel
     {
         private int id;
         private string nom;
@@ -16,7 +18,7 @@ namespace TpCompteBancaireHeritage.Classes
 
         public Client()
         {
-            Id=++counter;
+            //Id=++counter;
         }
         //public Client(string name) : this()
         //{
@@ -48,7 +50,34 @@ namespace TpCompteBancaireHeritage.Classes
 
         public bool Save()
         {
-            return false;
+            request = "INSERT INTO client (nom, prenom, telephone) OUTPUT INSERTED.ID values (@nom, @prenom,@telephone)";
+            connection = DataBase.Connection;
+            command = new SqlCommand(request, connection);
+            command.Parameters.Add(new SqlParameter("@nom", Nom));
+            command.Parameters.Add(new SqlParameter("@prenom", Prenom));
+            command.Parameters.Add(new SqlParameter("@telephone", Telephone));
+            connection.Open();
+            Id = (int)command.ExecuteScalar();
+            command.Dispose();
+            connection.Close();
+            return Id > 0;
         }
+        public static Client GetClientById(int id)
+        {
+            Client client = null;
+            request = "SELECT nom, prenom, telephone from client where id = @id";
+            connection = DataBase.Connection;
+            command = new SqlCommand(request, connection);
+            command.Parameters.Add(new SqlParameter("@id", id));
+            connection.Open();
+            reader = command.ExecuteReader();
+            if(reader.Read())
+            {
+                client = new Client(reader.GetString(0), reader.GetString(1), reader.GetString(2)) { 
+                    Id = id
+                };
+            }
+            return client;
+        } 
     }
 }

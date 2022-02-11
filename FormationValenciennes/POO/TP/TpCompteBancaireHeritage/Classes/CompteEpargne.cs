@@ -8,11 +8,11 @@ namespace TpCompteBancaireHeritage.Classes
 {
     internal class CompteEpargne : Compte
     {
-        private double taux;
+        private decimal taux;
 
-        public double Taux { get => taux; set => taux = value; }
+        public decimal Taux { get => taux; set => taux = value; }
 
-        public CompteEpargne(double solde, Client client, double taux) : base(solde, client)
+        public CompteEpargne(decimal solde, Client client, decimal taux) : base(solde, client)
         {
             Taux = taux;
         }

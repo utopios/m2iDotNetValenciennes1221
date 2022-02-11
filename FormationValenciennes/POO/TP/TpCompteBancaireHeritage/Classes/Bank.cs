@@ -19,10 +19,12 @@ namespace TpCompteBancaireHeritage.Classes
 
         public bool AjouterCompte(Compte compte)
         {
-            int avant = Comptes.Count;
-            Comptes.Add(compte);
-            int apres = Comptes.Count;
-            return apres - avant == 1? true : false;
+            //int avant = Comptes.Count;
+            //Comptes.Add(compte);
+            //int apres = Comptes.Count;
+            //return apres - avant == 1? true : false;
+            return compte.Client.Save() && compte.Save();
+
         }
 
         public Compte RechercherCompte(int id)
@@ -32,7 +34,8 @@ namespace TpCompteBancaireHeritage.Classes
             //return c;
 
             // Ecriture simplifiée
-            return Comptes.Find(c => c.Id == id);
+           // return Comptes.Find(c => c.Id == id);
+           return Compte.GetCompteById(id);
         }
     }
 }

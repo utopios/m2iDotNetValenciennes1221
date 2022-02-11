@@ -86,11 +86,11 @@ namespace TpCompteBancaireHeritage.Classes
             Console.Write("Veuillez saisir le téléphone : ");
             c.Telephone = Console.ReadLine();            
         }
-        public double CreationCompte()
+        public decimal CreationCompte()
         {
             Console.WriteLine("----- Création du compte ------\n");
             Console.Write("Veuillez saisir le solde à l'ouverture du compte : ");
-            return Convert.ToDouble( Console.ReadLine() );           
+            return Convert.ToDecimal( Console.ReadLine() );           
         }
         public void ActionCreationCompte()
         {            
@@ -99,7 +99,7 @@ namespace TpCompteBancaireHeritage.Classes
             CreationClient(client);
 
             // Création du compte           
-            double solde = CreationCompte();
+            decimal solde = CreationCompte();
             
             string choix = MenuCreationCompte();
 
@@ -111,13 +111,13 @@ namespace TpCompteBancaireHeritage.Classes
                     break;
                 case "2":
                     Console.Write("Veuillez saisir le taux de rémunération : ");
-                    double taux = Convert.ToDouble(Console.ReadLine());
+                    decimal taux = Convert.ToDecimal(Console.ReadLine());
                     // Création d'un compte Epargne
                     compte = new CompteEpargne(solde, client, taux );
                     break;
                 case "3":
                     Console.Write("Veuillez saisir le coût d'une opération : ");
-                    double cout = Convert.ToDouble(Console.ReadLine());
+                    decimal cout = Convert.ToDecimal(Console.ReadLine());
                     // Création d'un compte Payant
                     compte = new ComptePayant(solde, client, cout);
                     break;
@@ -128,7 +128,8 @@ namespace TpCompteBancaireHeritage.Classes
 
             if (compte != null)
             {
-                compte.AjouterCompte(bank);
+                //compte.AjouterCompte(bank);
+                bank.AjouterCompte(compte);
             }
             else
             {
@@ -142,7 +143,7 @@ namespace TpCompteBancaireHeritage.Classes
             Console.Write("---------- Déposer des fonds ----------\n");
             Compte c = ActionRechercherCompte();
             Console.Write("Veuillez saisir le montant du dépot : ");
-            double montant = Convert.ToDouble(Console.ReadLine());
+            decimal montant = Convert.ToDecimal(Console.ReadLine());
 
             // Montant => créer l'opération
             Operation o = new Operation(montant);
@@ -157,7 +158,7 @@ namespace TpCompteBancaireHeritage.Classes
             Compte c = ActionRechercherCompte();
 
             Console.Write("Veuillez saisir le montant du retrait : ");
-            double montant = Convert.ToDouble(Console.ReadLine())*-1;
+            decimal montant = Convert.ToDecimal(Console.ReadLine())*-1;
 
             // Montant => créer l'opération
             Operation o = new Operation(montant);
@@ -204,7 +205,7 @@ namespace TpCompteBancaireHeritage.Classes
         {
             Console.Write("Veuillez saisir l'id du compte : ");
             int id = Convert.ToInt32(Console.ReadLine());
-            return Compte.RechercherCompte(bank, id);
+            return bank.RechercherCompte(id);
         }
 
         private void WaitUser()

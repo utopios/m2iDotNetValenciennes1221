@@ -8,11 +8,11 @@ namespace TpCompteBancaireHeritage.Classes
 {
     internal class ComptePayant : Compte
     {
-        private double coutOperation;
+        private decimal coutOperation;
 
-        public double CoutOperation { get => coutOperation; set => coutOperation = value; }
+        public decimal CoutOperation { get => coutOperation; set => coutOperation = value; }
 
-        public ComptePayant(double solde, Client client, double CoutOperation) : base(solde, client)
+        public ComptePayant(decimal solde, Client client, decimal CoutOperation) : base(solde, client)
         {
             this.CoutOperation = CoutOperation;
         }
