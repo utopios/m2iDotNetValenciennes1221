@@ -12,9 +12,9 @@ namespace TpCompteBancaireHeritage.Data
         public static void Injecter(Bank bank)
         {
             // Création des clients
-            Client c1 = new Client("Di Persio", "Anthony", "+33 6 12 34 56 78");
-            Client c2 = new Client("Abadi", "Ihab", "+33 6 74 85 96 32");
-            Client c3 = new Client("Abadi", "Marine", "+33 6 14 52 63 96");
+            Client c1 = new ("Di Persio", "Anthony", "+33 6 12 34 56 78");
+            Client c2 = new ("Abadi", "Ihab", "+33 6 74 85 96 32");
+            Client c3 = new ("Abadi", "Marine", "+33 6 14 52 63 96");
 
 
 
@@ -39,6 +39,7 @@ namespace TpCompteBancaireHeritage.Data
             compte2.Operations.Add(operation4);
             compte3.Operations.Add(operation5);
             compte3.Operations.Add(operation6);
+
             // Ajout du compte à la collection comptes de la Bank
             bank.Comptes.Add(compte1);
             bank.Comptes.Add(compte2);
