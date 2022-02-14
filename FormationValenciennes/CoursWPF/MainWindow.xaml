@@ -16,6 +16,7 @@
                     <Separator/>
                     <MenuItem Header="Quitter" Click="Quitter_Click"/>
                 </MenuItem>
+                <MenuItem x:Name="UniformGridWindows" Header="UniformGridWindow" Click="UniformGridWindow_Click" />
                 <MenuItem x:Name="GridWindows" Header="GridWindow" Click="GridWindow_Click" />
                 <MenuItem x:Name="About" Header="About" Click="About_Click"/>
             </Menu>

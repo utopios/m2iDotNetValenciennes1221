@@ -93,5 +93,11 @@ namespace CoursWPF
             // afficher dans la partie ResultTxBlock
             ResultTxBlock.Text = nom_Complet;
         }
+
+        private void UniformGridWindow_Click(object sender, RoutedEventArgs e)
+        {
+            UniformGridWindow window = new UniformGridWindow();
+            window.Show();
+        }
     }
 }
