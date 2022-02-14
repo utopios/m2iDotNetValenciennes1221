@@ -1,0 +1,9 @@
+﻿<Application x:Class="CoursWPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:CoursWPF"
+             StartupUri="MainWindow.xaml"> <!-- Le point d'entrée de notre application WPf -->
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
