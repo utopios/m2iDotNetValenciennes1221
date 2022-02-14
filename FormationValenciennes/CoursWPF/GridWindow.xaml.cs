@@ -23,5 +23,10 @@ namespace CoursWPF
         {
             InitializeComponent();
         }
+
+        private void ValiderSaisie_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

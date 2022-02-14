@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CoursWPF"
         mc:Ignorable="d"
-        Title="GridWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
-    <Grid>
+        Title="GridWindow" Height="550" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid ShowGridLines="True" Background="Coral">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="2*"/>
@@ -20,5 +20,22 @@
         <TextBlock Grid.Row="0" Grid.Column="0" Text="Haut à gauche" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <TextBlock Grid.Row="1" Grid.Column="1" Text="Millieu"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <TextBlock Grid.Row="2" Grid.Column="2" Text="Bas à droite"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <GroupBox Header="Formulaire" Foreground="White" Grid.Row="0" Grid.Column="1">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,5">
+                    <Label Content="Nom : "/>
+                    <TextBox x:Name="NomTxBox" Width="301" Margin="15,0,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Prenom : " Margin="0,5,0,5"/>
+                    <TextBox x:Name="PrenomTxBox" Width="300px" Height="30"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,5">
+                    <Label Content="Age : "/>
+                    <TextBox x:Name="AgeTxBox" Width="300px" Margin="20,0,0,0"/>
+                </StackPanel>
+                <Button x:Name="ValiderSaisieBtn" Content="Valider" Click="ValiderSaisie_Click"/>
+            </StackPanel>
+        </GroupBox>
     </Grid>
 </Window>
