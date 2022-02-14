@@ -24,6 +24,7 @@ namespace CoursWPF
         {
             InitializeComponent();
             MakeBtn();
+            MakeMenu();
         }
 
         void MakeBtn()
@@ -40,11 +41,46 @@ namespace CoursWPF
           
         }
 
+        void MakeMenu()
+        {
+            Button a = new Button()
+            {
+                Name = "Orange",
+                Content = "Orange",
+                Foreground = Brushes.Black,
+                Background = Brushes.OrangeRed
+            };
+            a.Click += Button_Click;
+            MyStackPanel.Children.Add(a);
+
+            Button b = new Button()
+            {
+                Name = "Blue",
+                Content = "Blue",
+                Foreground = Brushes.White,
+                Background = Brushes.Blue
+            };
+            b.Click += Button_Click;
+            MyStackPanel.Children.Add(b);
+
+            Button c = new Button()
+            {
+                Name = "Green",
+                Content = "Green",
+                Foreground = Brushes.White,
+                Background = Brushes.Green
+            };
+            c.Click += Button_Click;
+            MyStackPanel.Children.Add(c);
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            //MessageBox.Show(e.OriginalSource.ToString());
+            object m = sender;
+            MessageBox.Show(m.ToString());
         }
+        
 
 
         private void Valider_Click(object sender, RoutedEventArgs e)
