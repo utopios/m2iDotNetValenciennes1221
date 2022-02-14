@@ -26,7 +26,9 @@ namespace CoursWPF
 
         private void ValiderSaisie_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show($"{NomTxBox.Text} {PrenomTxBox.Text} a {AgeTxBox.Text} ans");
         }
+
+
     }
 }
