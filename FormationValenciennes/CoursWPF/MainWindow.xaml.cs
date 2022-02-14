@@ -77,7 +77,8 @@ namespace CoursWPF
 
         private void GridWindow_Click(object sender, RoutedEventArgs e)
         {
-
+            GridWindow window = new GridWindow();
+            window.Show();
         }
 
         private void ValiderSaisie_Click(object sender, RoutedEventArgs e)
