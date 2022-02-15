@@ -24,10 +24,10 @@
         <TextBlock DockPanel.Dock="Bottom" HorizontalAlignment="Center" Height="30">
             Footer
         </TextBlock>
-        <TextBlock DockPanel.Dock="Right" HorizontalAlignment="Center" Height="30">
+        <TextBlock DockPanel.Dock="Right" HorizontalAlignment="Center" Height="400" Background="Coral">
             Menu Right
         </TextBlock>
-        <TextBlock DockPanel.Dock="Left" HorizontalAlignment="Center" Height="30">
+        <TextBlock DockPanel.Dock="Left" HorizontalAlignment="Center" Background="Coral"  Height="400">
             Menu Left
         </TextBlock>
 
