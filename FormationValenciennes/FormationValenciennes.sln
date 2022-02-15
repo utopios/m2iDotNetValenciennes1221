@@ -77,12 +77,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tp", "Tp", "{3D9817D6-C8EE-
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeBehind", "CodeBehind", "{45B97D9E-EAB9-402C-96CE-1166D8E0D5A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoursWPF", "CoursWPF\CoursWPF.csproj", "{C6AD3A3B-3DE1-4C31-808E-8FA5CDF427BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoursWPF", "CoursWPF\CoursWPF.csproj", "{C6AD3A3B-3DE1-4C31-808E-8FA5CDF427BE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeNombreMystere", "LeNombreMystere", "{543B5EC8-B282-4D34-9177-6ABE26FDD063}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\..\..\MesFormations\FormationC#-NET\Sujet Exercices\SujetWPF\TpNombreMystere\TP-NombreMystereWPF.pdf = ..\..\..\..\..\MesFormations\FormationC#-NET\Sujet Exercices\SujetWPF\TpNombreMystere\TP-NombreMystereWPF.pdf
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpNombreMystere", "TpNombreMystere\TpNombreMystere.csproj", "{C4325684-C341-428F-AE6F-80BE55302A76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -190,6 +192,10 @@ Global
 		{C6AD3A3B-3DE1-4C31-808E-8FA5CDF427BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6AD3A3B-3DE1-4C31-808E-8FA5CDF427BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6AD3A3B-3DE1-4C31-808E-8FA5CDF427BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4325684-C341-428F-AE6F-80BE55302A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4325684-C341-428F-AE6F-80BE55302A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4325684-C341-428F-AE6F-80BE55302A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4325684-C341-428F-AE6F-80BE55302A76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -230,6 +236,7 @@ Global
 		{45B97D9E-EAB9-402C-96CE-1166D8E0D5A6} = {063F38F8-4745-4515-888D-E76131D54793}
 		{C6AD3A3B-3DE1-4C31-808E-8FA5CDF427BE} = {45B97D9E-EAB9-402C-96CE-1166D8E0D5A6}
 		{543B5EC8-B282-4D34-9177-6ABE26FDD063} = {3D9817D6-C8EE-4977-BF41-0BE3F0417151}
+		{C4325684-C341-428F-AE6F-80BE55302A76} = {543B5EC8-B282-4D34-9177-6ABE26FDD063}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {166A154C-763A-498A-9A9B-E77B3743B2AE}
