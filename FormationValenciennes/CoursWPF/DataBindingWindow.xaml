@@ -1,0 +1,33 @@
+﻿<Window x:Class="CoursWPF.DataBindingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoursWPF"
+        mc:Ignorable="d"
+        Title="DataBindingWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <UniformGrid Columns="2" Rows="2">
+        <ListBox Name="MaListe">
+            <ListBoxItem Content="Red"/>
+            <ListBoxItem Content="Green"/>
+            <ListBoxItem Content="Beige"/>
+            <ListBoxItem Content="Blue"/>
+            <ListBoxItem Content="Purple"/>
+        </ListBox>
+        <StackPanel>
+            <TextBlock HorizontalAlignment="Center" Margin="0 10 0 0" Text="{Binding ElementName=MaListe, Path=SelectedItem.Content}"/>
+            <Rectangle Width="300" Height="150" Fill="{Binding ElementName=MaListe, Path=SelectedItem.Content}" />
+        </StackPanel>
+        <StackPanel>
+            <TextBlock HorizontalAlignment="Center" Margin="0 10 0 0" Text="{Binding ElementName=MaListe1, Path=SelectedItem.Content}"/>
+            <Rectangle Width="300" Height="150" Fill="{Binding ElementName=MaListe1, Path=SelectedItem.Content}" />
+        </StackPanel>
+        <ListBox Name="MaListe1">
+            <ListBoxItem Content="Red"/>
+            <ListBoxItem Content="Green"/>
+            <ListBoxItem Content="Beige"/>
+            <ListBoxItem Content="Blue"/>
+            <ListBoxItem Content="Purple"/>
+        </ListBox>
+    </UniformGrid>
+</Window>
