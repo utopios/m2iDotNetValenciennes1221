@@ -42,7 +42,7 @@ namespace TpNombreMystere
 
         private void TbxUserNum_Keydown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Return)
+            if (e.Key == Key.Return && game.GameWin != true)
             {
                 BtnValider_Click(sender, e);
             }

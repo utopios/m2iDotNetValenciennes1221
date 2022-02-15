@@ -40,8 +40,7 @@ namespace TpNombreMystere.Classes
         public string TestNum(int userNum)
         {
             if (userNum > 0)
-            {
-                
+            {                
                 switch (userNum)
                 {
                     case int tmpNum when tmpNum == NbMystere:
@@ -56,8 +55,7 @@ namespace TpNombreMystere.Classes
                 }
             }
             else            
-                return "Erreur";
-            
+                return "Erreur";            
         }
 
         private string Win()
