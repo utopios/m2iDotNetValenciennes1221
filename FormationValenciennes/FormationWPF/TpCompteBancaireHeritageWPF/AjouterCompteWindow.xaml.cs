@@ -71,6 +71,8 @@ namespace TpCompteBancaireHeritageWPF
                 else
                     MessageBox.Show("Veuillez verifier la saisie du montant", "Erreur de saisie", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+            else
+                MessageBox.Show("Veuillez saisir tous les champs", "Erreur de saisie", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private void Fermer_Click(object sender, RoutedEventArgs e)
