@@ -45,7 +45,7 @@ namespace TpCompteBancaireHeritageWPF.DAO
                     OperationDAO opeDAO = new OperationDAO();
                     compte.Solde = reader.GetDecimal(0);
                     compte.Id = id;
-                    compte.Client = new Client() { Id = reader.GetInt32(3), Nom = reader.GetString(4), Prenom = reader.GetString(5), Telephone = reader.GetString(5) };
+                    compte.Client = new Client() { Id = reader.GetInt32(3), Nom = reader.GetString(4), Prenom = reader.GetString(5), Telephone = reader.GetString(6) };
                     compte.Operations = opeDAO.GetAll(compte.Id);
                 }
             }
