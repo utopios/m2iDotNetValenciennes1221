@@ -84,7 +84,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeNombreMystere", "LeNombre
 		..\..\..\..\..\MesFormations\FormationC#-NET\Sujet Exercices\SujetWPF\TpNombreMystere\TP-NombreMystereWPF.pdf = ..\..\..\..\..\MesFormations\FormationC#-NET\Sujet Exercices\SujetWPF\TpNombreMystere\TP-NombreMystereWPF.pdf
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpNombreMystere", "TpNombreMystere\TpNombreMystere.csproj", "{C4325684-C341-428F-AE6F-80BE55302A76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TpNombreMystere", "TpNombreMystere\TpNombreMystere.csproj", "{C4325684-C341-428F-AE6F-80BE55302A76}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TpCompteBancaireHéritage", "TpCompteBancaireHéritage", "{C68FC02A-E071-4B2E-93C2-0B1FEC83B973}"
 	ProjectSection(SolutionItems) = preProject
@@ -92,6 +92,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TpCompteBancaireHéritage",
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BanqueAdoNET", "FormationAdoNet\BanqueAdoNET\BanqueAdoNET.csproj", "{F1014726-9859-4A15-B520-B1152AA1EAA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpCompteBancaireHeritageWPF", "FormationWPF\TpCompteBancaireHeritageWPF\TpCompteBancaireHeritageWPF.csproj", "{A6848B5D-0310-4278-891E-A3755B874BF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -207,6 +209,10 @@ Global
 		{F1014726-9859-4A15-B520-B1152AA1EAA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1014726-9859-4A15-B520-B1152AA1EAA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1014726-9859-4A15-B520-B1152AA1EAA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6848B5D-0310-4278-891E-A3755B874BF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6848B5D-0310-4278-891E-A3755B874BF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6848B5D-0310-4278-891E-A3755B874BF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6848B5D-0310-4278-891E-A3755B874BF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -250,6 +256,7 @@ Global
 		{C4325684-C341-428F-AE6F-80BE55302A76} = {543B5EC8-B282-4D34-9177-6ABE26FDD063}
 		{C68FC02A-E071-4B2E-93C2-0B1FEC83B973} = {3D9817D6-C8EE-4977-BF41-0BE3F0417151}
 		{F1014726-9859-4A15-B520-B1152AA1EAA7} = {46BD3D88-75CB-497C-B942-84BB4EF04A88}
+		{A6848B5D-0310-4278-891E-A3755B874BF4} = {C68FC02A-E071-4B2E-93C2-0B1FEC83B973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {166A154C-763A-498A-9A9B-E77B3743B2AE}
