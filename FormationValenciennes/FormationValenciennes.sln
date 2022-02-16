@@ -74,6 +74,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cours", "Cours", "{063F38F8-4745-4515-888D-E76131D54793}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tp", "Tp", "{3D9817D6-C8EE-4977-BF41-0BE3F0417151}"
+	ProjectSection(SolutionItems) = preProject
+		FormationWPF\TP-TirageWPF.pdf = FormationWPF\TP-TirageWPF.pdf
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeBehind", "CodeBehind", "{45B97D9E-EAB9-402C-96CE-1166D8E0D5A6}"
 EndProject
@@ -94,6 +97,24 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BanqueAdoNET", "FormationAdoNet\BanqueAdoNET\BanqueAdoNET.csproj", "{F1014726-9859-4A15-B520-B1152AA1EAA7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpCompteBancaireHeritageWPF", "FormationWPF\TpCompteBancaireHeritageWPF\TpCompteBancaireHeritageWPF.csproj", "{A6848B5D-0310-4278-891E-A3755B874BF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TpTirageWPF", "TpTirageWPF", "{122ABBAB-6695-4FEA-BEC4-56EBEBB022B8}"
+	ProjectSection(SolutionItems) = preProject
+		FormationWPF\TP-TirageWPF.pdf = FormationWPF\TP-TirageWPF.pdf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "§§§ Backup §§§", "§§§ Backup §§§", "{FD250464-169C-4BD4-B412-C218B82E4520}"
+	ProjectSection(SolutionItems) = preProject
+		FormationWPF\§§§ Backup §§§\AlreadyList.txt = FormationWPF\§§§ Backup §§§\AlreadyList.txt
+		FormationWPF\§§§ Backup §§§\BackupList.txt = FormationWPF\§§§ Backup §§§\BackupList.txt
+		FormationWPF\§§§ Backup §§§\ListOrigin.txt = FormationWPF\§§§ Backup §§§\ListOrigin.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "save", "save", "{888E355B-F305-4169-AD5C-35D5EB07356E}"
+	ProjectSection(SolutionItems) = preProject
+		FormationWPF\§§§ Backup §§§\save\M2i_Valenciennes.txt = FormationWPF\§§§ Backup §§§\save\M2i_Valenciennes.txt
+		FormationWPF\§§§ Backup §§§\save\MaListe.txt = FormationWPF\§§§ Backup §§§\save\MaListe.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -257,6 +278,9 @@ Global
 		{C68FC02A-E071-4B2E-93C2-0B1FEC83B973} = {3D9817D6-C8EE-4977-BF41-0BE3F0417151}
 		{F1014726-9859-4A15-B520-B1152AA1EAA7} = {46BD3D88-75CB-497C-B942-84BB4EF04A88}
 		{A6848B5D-0310-4278-891E-A3755B874BF4} = {C68FC02A-E071-4B2E-93C2-0B1FEC83B973}
+		{122ABBAB-6695-4FEA-BEC4-56EBEBB022B8} = {3D9817D6-C8EE-4977-BF41-0BE3F0417151}
+		{FD250464-169C-4BD4-B412-C218B82E4520} = {122ABBAB-6695-4FEA-BEC4-56EBEBB022B8}
+		{888E355B-F305-4169-AD5C-35D5EB07356E} = {FD250464-169C-4BD4-B412-C218B82E4520}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {166A154C-763A-498A-9A9B-E77B3743B2AE}
