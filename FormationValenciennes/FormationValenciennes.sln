@@ -96,7 +96,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TpCompteBancaireHéritage",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BanqueAdoNET", "FormationAdoNet\BanqueAdoNET\BanqueAdoNET.csproj", "{F1014726-9859-4A15-B520-B1152AA1EAA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpCompteBancaireHeritageWPF", "FormationWPF\TpCompteBancaireHeritageWPF\TpCompteBancaireHeritageWPF.csproj", "{A6848B5D-0310-4278-891E-A3755B874BF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TpCompteBancaireHeritageWPF", "FormationWPF\TpCompteBancaireHeritageWPF\TpCompteBancaireHeritageWPF.csproj", "{A6848B5D-0310-4278-891E-A3755B874BF4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TpTirageWPF", "TpTirageWPF", "{122ABBAB-6695-4FEA-BEC4-56EBEBB022B8}"
 	ProjectSection(SolutionItems) = preProject
@@ -115,6 +115,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "save", "save", "{888E355B-F
 		FormationWPF\§§§ Backup §§§\save\M2i_Valenciennes.txt = FormationWPF\§§§ Backup §§§\save\M2i_Valenciennes.txt
 		FormationWPF\§§§ Backup §§§\save\MaListe.txt = FormationWPF\§§§ Backup §§§\save\MaListe.txt
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FormationAspNETCore", "FormationAspNETCore", "{B93F6702-F9E2-4139-B1A5-2E7E4A97D36A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cours", "Cours", "{E80B3431-D05F-4466-BFD4-ED212B59F643}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tp", "Tp", "{DFA538A2-D31E-4620-B39A-6220699AABB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationAspNETCore", "AspNET\FormationAspNETCore\FormationAspNETCore.csproj", "{00F20BFE-063D-4081-B3E0-9BD19CD04C4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -234,6 +242,10 @@ Global
 		{A6848B5D-0310-4278-891E-A3755B874BF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6848B5D-0310-4278-891E-A3755B874BF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6848B5D-0310-4278-891E-A3755B874BF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00F20BFE-063D-4081-B3E0-9BD19CD04C4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F20BFE-063D-4081-B3E0-9BD19CD04C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00F20BFE-063D-4081-B3E0-9BD19CD04C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F20BFE-063D-4081-B3E0-9BD19CD04C4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -281,6 +293,9 @@ Global
 		{122ABBAB-6695-4FEA-BEC4-56EBEBB022B8} = {3D9817D6-C8EE-4977-BF41-0BE3F0417151}
 		{FD250464-169C-4BD4-B412-C218B82E4520} = {122ABBAB-6695-4FEA-BEC4-56EBEBB022B8}
 		{888E355B-F305-4169-AD5C-35D5EB07356E} = {FD250464-169C-4BD4-B412-C218B82E4520}
+		{E80B3431-D05F-4466-BFD4-ED212B59F643} = {B93F6702-F9E2-4139-B1A5-2E7E4A97D36A}
+		{DFA538A2-D31E-4620-B39A-6220699AABB1} = {B93F6702-F9E2-4139-B1A5-2E7E4A97D36A}
+		{00F20BFE-063D-4081-B3E0-9BD19CD04C4E} = {E80B3431-D05F-4466-BFD4-ED212B59F643}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {166A154C-763A-498A-9A9B-E77B3743B2AE}
