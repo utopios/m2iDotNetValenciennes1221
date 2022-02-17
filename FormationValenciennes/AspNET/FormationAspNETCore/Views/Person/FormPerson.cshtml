@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "FormPerson";
+}
+
+<div>
+    <h1>Ajouter une personne</h1>
+
+    <form enctype="multipart/form-data" asp-controller="Person" asp-action="SubmitPerson" method="post">
+        <div class="row m-1">
+            <input type="text" name="FirstName" class="form-control col p-1" placeholder="Merci de saisir votre Prénom" />
+        </div>
+        <div class="row m-1">
+            <input type="text" name="LastName" class="form-control col p-1" placeholder="Merci de saisir votre Nom" />
+        </div>
+        <div class="row m-1">
+            <input type="text" name="Phone" class="form-control col p-1" placeholder="Merci de saisir votre téléphone" />
+        </div>
+        <div class="row m-1">
+            <button class="col btn btn-primary" type="submit">Valider</button>
+        </div>
+    </form>
+
+</div>
+

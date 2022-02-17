@@ -1,0 +1,16 @@
+﻿@model Person
+@{
+    ViewData["Title"] = "SubmitPerson";
+}
+<div>
+    <h1>Personne issue du formulaire</h1>
+    <h2>Details de la Personne n°@Model.Id</h2>
+    <div class=row>
+        <div class="col">@Model.FirstName</div>
+        <div class="col">@Model.LastName</div>
+        <div class="col">@Model.Phone</div>
+    </div>
+
+</div>
+
+

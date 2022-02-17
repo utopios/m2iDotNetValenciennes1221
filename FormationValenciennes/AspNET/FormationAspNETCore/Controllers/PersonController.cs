@@ -26,6 +26,19 @@ namespace FormationAspNETCore.Controllers
             return View();
         }
 
+        // GET: PersonController/FormPerson
+        public IActionResult FormPerson()
+        {
+            return View();
+        }
+
+        // GET: PersonController/FormPerson
+        public IActionResult SubmitPerson(string FirstName, string LastName, string Phone)
+        {
+            Person p = new(FirstName, LastName, Phone);
+            return View(p);
+        }
+
         // GET: PersonController/DisplayPerson
         public IActionResult DisplayPerson()
         {
