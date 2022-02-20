@@ -1,0 +1,14 @@
+﻿@model Contact
+
+@if (Model != null)
+{
+    <div class="row">
+        <div class="col">
+            <h1 class="row">Merci de confirmer la suppression du contact @Model.FirstName</h1>
+            <div class="row">
+                <a class="col btn btn-success" asp-controller="Annuaire" asp-action="Delete" asp-route-id="@Model.Id">Confirmer</a>
+                <a class="col btn btn-danger" asp-controller="Annuaire" asp-action="Index">Annuler</a>
+            </div>
+        </div>
+    </div>
+}

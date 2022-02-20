@@ -1,0 +1,42 @@
+﻿@model List<Contact>
+@*@{
+        Layout = "_SpecialLayout";
+    }*@
+
+<h1 class="row">
+    Accueil Annuaire
+</h1>
+<form class="row m-1" asp-controller="Annuaire" asp-action="Index" method="get">
+    <input type="text" name="search" placeholder="Votre recherche..." class="col-9 p-1 form-control" />
+    <button type="submit" class="btn btn-warning p-1 col-3">Rechercher</button>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Prénom</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Téléphone</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @*@foreach (Contact c in ViewData["listeContacts"] as List<Contact>)*@
+        @*@foreach (Contact c in ViewBag.ListePersonnes)*@
+        @foreach (Contact c in Model)
+        {
+        <tr>
+            <th scope="row">@c.Id</th>
+            <td>@c.FirstName</td>
+            <td>@c.LastName</td>
+            <td>@c.Phone</td>
+            <td><a asp-controller="Annuaire" asp-action="Details" asp-route-id="@c.Id">Details</a></td>
+            <td><a asp-controller="Annuaire" asp-action="ConfirmDelete" asp-route-id="@c.Id">Supprimer</a></td>
+            <td><a asp-controller="Annuaire" asp-action="Form" asp-route-id="@c.Id">Modifier</a></td>
+        </tr>
+        }
+
+    </tbody>
+</table>

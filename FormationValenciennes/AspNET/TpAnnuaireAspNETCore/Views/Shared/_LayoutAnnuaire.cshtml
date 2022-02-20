@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Notre annuaire</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+    <body>
+        <header class="container-fluid">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a asp-controller="Annuaire" asp-action="Index" ><img src="~/images/logo.jpg" /></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Annuaire" asp-action="Index">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Annuaire" asp-action="Form" >Formulaire</a>
+                </li>
+            </ul>
+        </header>
+        <main class="container">
+            @RenderBody()
+        </main>
+    </body>
+</html>
