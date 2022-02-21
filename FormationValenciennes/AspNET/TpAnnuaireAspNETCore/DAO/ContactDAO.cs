@@ -11,8 +11,8 @@ namespace TpAnnuaireAspNETCore.DAO
     {
         public override bool Create(Contact element)
         {
-            request = "INSERT INTO contact(firstName, lastName, email, phone,url) " +
-                "OUTPUT INSERTED.ID VALUES (@firstName, @lastName,@email, @phone,@url)";
+            request = "INSERT INTO contact(firstName, lastName, email, phone, url) " +
+                "OUTPUT INSERTED.ID VALUES (@firstName, @lastName, @email, @phone, @url)";
             connection = Connection.New;
             command = new SqlCommand(request, connection);
             command.Parameters.Add(new SqlParameter("@firstName", element.FirstName));

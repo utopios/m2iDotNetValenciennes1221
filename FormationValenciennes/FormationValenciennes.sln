@@ -84,7 +84,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoursWPF", "CoursWPF\CoursW
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeNombreMystere", "LeNombreMystere", "{543B5EC8-B282-4D34-9177-6ABE26FDD063}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\..\MesFormations\FormationC#-NET\Sujet Exercices\SujetWPF\TpNombreMystere\TP-NombreMystereWPF.pdf = ..\..\..\..\..\MesFormations\FormationC#-NET\Sujet Exercices\SujetWPF\TpNombreMystere\TP-NombreMystereWPF.pdf
+		..\..\..\MesFormations\FormationC#-NET\Sujet Exercices\SujetWPF\TpNombreMystere\TP-NombreMystereWPF.pdf = ..\..\..\MesFormations\FormationC#-NET\Sujet Exercices\SujetWPF\TpNombreMystere\TP-NombreMystereWPF.pdf
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TpNombreMystere", "TpNombreMystere\TpNombreMystere.csproj", "{C4325684-C341-428F-AE6F-80BE55302A76}"
@@ -122,9 +122,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cours", "Cours", "{E80B3431
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tp", "Tp", "{DFA538A2-D31E-4620-B39A-6220699AABB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationAspNETCore", "AspNET\FormationAspNETCore\FormationAspNETCore.csproj", "{00F20BFE-063D-4081-B3E0-9BD19CD04C4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormationAspNETCore", "AspNET\FormationAspNETCore\FormationAspNETCore.csproj", "{00F20BFE-063D-4081-B3E0-9BD19CD04C4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpAnnuaireAspNETCore", "AspNET\TpAnnuaireAspNETCore\TpAnnuaireAspNETCore.csproj", "{55C6D2A6-AE0D-40E6-AD97-EF64336BFB4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TpAnnuaireAspNETCore", "AspNET\TpAnnuaireAspNETCore\TpAnnuaireAspNETCore.csproj", "{55C6D2A6-AE0D-40E6-AD97-EF64336BFB4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiRestFullCrudEtudiant", "AspNET\Nouveau dossier\ApiRestFullCrudEtudiant\ApiRestFullCrudEtudiant.csproj", "{719ED4C5-8E74-44D3-8541-8A8A35B82A3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -252,6 +254,10 @@ Global
 		{55C6D2A6-AE0D-40E6-AD97-EF64336BFB4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55C6D2A6-AE0D-40E6-AD97-EF64336BFB4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55C6D2A6-AE0D-40E6-AD97-EF64336BFB4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{719ED4C5-8E74-44D3-8541-8A8A35B82A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{719ED4C5-8E74-44D3-8541-8A8A35B82A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{719ED4C5-8E74-44D3-8541-8A8A35B82A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{719ED4C5-8E74-44D3-8541-8A8A35B82A3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -303,6 +309,7 @@ Global
 		{DFA538A2-D31E-4620-B39A-6220699AABB1} = {B93F6702-F9E2-4139-B1A5-2E7E4A97D36A}
 		{00F20BFE-063D-4081-B3E0-9BD19CD04C4E} = {E80B3431-D05F-4466-BFD4-ED212B59F643}
 		{55C6D2A6-AE0D-40E6-AD97-EF64336BFB4D} = {DFA538A2-D31E-4620-B39A-6220699AABB1}
+		{719ED4C5-8E74-44D3-8541-8A8A35B82A3D} = {E80B3431-D05F-4466-BFD4-ED212B59F643}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {166A154C-763A-498A-9A9B-E77B3743B2AE}

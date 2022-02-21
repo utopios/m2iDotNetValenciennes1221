@@ -2,8 +2,9 @@
 <h1 class="row">Formulaire Annuaire</h1>
 <form class="row" enctype="multipart/form-data" asp-controller="Annuaire" asp-action="SubmitForm" method="post">
     <div class="col">
+        @*Cet input est caché pour garder l'id du contact*@
         <input type="hidden" name="id" asp-for="@Model.Id" />
-        @*<input type="hidden" name="id" value="@Model.Id" />*@
+        
         <div class="row m-1">
             <input type="text" name="firstName" required asp-for="@Model.FirstName" placeholder="Prénom du contact" class="col form-control p-1" />
         </div>
