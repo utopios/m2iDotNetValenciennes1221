@@ -1,0 +1,27 @@
+﻿@model Contact
+<h1 class="row">Formulaire Annuaire</h1>
+<form class="row" enctype="multipart/form-data" asp-controller="Annuaire" asp-action="SubmitForm" method="post">
+    <div class="col">
+        <input type="hidden" name="id" asp-for="@Model.Id" />
+        @*<input type="hidden" name="id" value="@Model.Id" />*@
+        <div class="row m-1">
+            <input type="text" name="firstName" required asp-for="@Model.FirstName" placeholder="Prénom du contact" class="col form-control p-1" />
+        </div>
+        <div class="row m-1">
+            <input type="text" name="lastName" required asp-for="@Model.LastName" placeholder="Nom du contact" class="col form-control p-1" />
+        </div>
+         <div class="row m-1">
+            <input type="text" name="email" required asp-for="@Model.Email" placeholder="Email du contact" class="col form-control p-1" />
+        </div>
+        <div class="row m-1">
+            <input type="text" name="phone" required asp-for="@Model.Phone" placeholder="Téléphone du contact" class="col form-control p-1" />
+        </div>
+        <input type="hidden" name="url" asp-for="@Model.Url" />
+        <div class="row m-1">
+            <input type="file" name="avatar" class="col form-control p-1" />
+        </div>
+        <div class="row m-1">
+            <button type="submit" class="col btn btn-dark">Valider</button>
+        </div>
+    </div>
+</form>

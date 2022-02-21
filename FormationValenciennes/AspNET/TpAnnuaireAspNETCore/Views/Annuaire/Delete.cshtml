@@ -1,0 +1,18 @@
+﻿@model bool
+
+@if (Model)
+{
+    <div class="row">
+        <div class="col alert alert-success">
+            Suppression Ok
+        </div>
+    </div>
+}
+else
+{
+    <div class="row">
+        <div class="col alert alert-danger">
+            erreur suppression
+        </div>
+    </div>
+}
