@@ -1,0 +1,10 @@
+﻿CREATE TABLE students
+( 
+	id INT IDENTITY(1,1) NOT NULL,
+	gender VARCHAR(50) NOT NULL ,
+	firstName VARCHAR(250) NOT NULL ,
+	lastName VARCHAR(250) NOT NULL ,
+	email VARCHAR(250) NOT NULL ,
+	student_number INT NOT NULL ,
+	PRIMARY KEY CLUSTERED (id ASC)
+);

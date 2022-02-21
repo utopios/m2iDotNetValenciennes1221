@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using ApiRestFullCrudEtudiant.DAO;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace ApiRestFullCrudEtudiant.Models
 {
@@ -33,14 +35,32 @@ namespace ApiRestFullCrudEtudiant.Models
         public string Email { get => email; set => email = value; }
         public int StudentNumber { get => studentNumber; set => studentNumber = value; }
 
+        
         public int Add()
         {
-            return Stu
+
+            return StudentDAO.AddStudent(this);
+            // return StudentDAO.AddStudent(this);
         }
 
         public static List<Student> Get()
         {
+            return StudentDAO.GetStudents();
+        }
 
+        public static Student Get(int Id)
+        {
+            return StudentDAO.GetStudent(Id);
+        }
+
+        public bool Update()
+        {
+            return StudentDAO.UpdateStudent(this);
+        }
+
+        public static bool Delete(int Id)
+        {
+            return StudentDAO.DeleteStudent(Id);
         }
     }
 }
