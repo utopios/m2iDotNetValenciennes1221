@@ -9,6 +9,15 @@ namespace correctionForum.DAO
         {
             throw new System.NotImplementedException();
         }
+        /*public Abonne Save(Abonne element, int forum_id)
+        {
+            throw new System.NotImplementedException();
+        }*/
+
+        public bool JoinAbonneForum(int abonneId, int forumId)
+        {
+            return false;
+        }
 
         public override Abonne FindById(int id)
         {
