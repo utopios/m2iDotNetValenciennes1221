@@ -46,9 +46,9 @@ namespace ExpressionsReguliere.Classes
         // Créer une méthode pour vérifier le téléphone
         public static bool IsPhone(string phone)
         {
-            // +33 6 59 78 65 32
+            // +33 6 59 78 65 32 => Le Bon Format
             // 33 6 59 78 65 32
-            // 03 20 45 69 87
+            // 03 20 45 69 87 => Le Bon Format
             // 06-23-45-69-87
             // 06.23.45.69.87
             // 0723456987
@@ -61,6 +61,19 @@ namespace ExpressionsReguliere.Classes
         {
             string pattern = @"^([0-9]+)(\,)?([0-9]*)$";
             return Regex.IsMatch(chaine, pattern);
+        }
+
+        public static bool IsAlphabetic(string chaine)
+        {
+            string pattern = @"^[A-Z]{1}[a-zA-Z\séèë\-_\s]*$";
+            return Regex.IsMatch(chaine, pattern);
+        }
+
+        public static string ClearMultipleSpace(string chaine)
+        {
+            string pattern = @"\s+";
+            string CleanedString = Regex.Replace(chaine, pattern, " ");
+            return CleanedString;
         }
 
     }

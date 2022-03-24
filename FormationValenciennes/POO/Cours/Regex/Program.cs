@@ -7,6 +7,12 @@ namespace ExpressionsReguliere
     {
         static void Main(string[] args)
         {
+            // REPLACE() => Remplace un caractere recherché par un autre
+            string maChaine = "Bonjour,          je     m'appelle       Anthony      ";
+            Console.WriteLine(Tools.ClearMultipleSpace(maChaine));
+
+
+
             Console.WriteLine("Veuillez saisir votre nom : ");
             string lastName = Console.ReadLine();
             Console.WriteLine("Veuillez saisir votre prénom : ");

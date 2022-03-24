@@ -28,6 +28,7 @@ namespace SuiteCoursPOO
             Person sp = new Student("titi", "minet", 50, 1);
             //sp.Afficher();
 
+
             Console.Read();
         }
     }
