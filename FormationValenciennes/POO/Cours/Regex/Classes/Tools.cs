@@ -37,11 +37,31 @@ namespace ExpressionsReguliere.Classes
         }
 
         // Créer Une méthode pour vérifier une adresse email:
-
-        public static bool IsEmail(string name)
+        public static bool IsEmail(string email)
         { 
-            string pattern = @"^([a-zA-Z0-9\.\-_]+)@([a-zA-Z0-9\.\-_]+)\.([a-zA-Z]{2,11})$";
-            return Regex.IsMatch(name, pattern);
+            string pattern = @"^([a-zA-Z0-9\.\-_]+)@([a-zA-Z0-9\-_]+)(\.)?([a-zA-Z0-9\-_]+)?(\.){1}([a-zA-Z]{2,11})$";
+            return Regex.IsMatch(email, pattern);
         }
+
+        // Créer une méthode pour vérifier le téléphone
+        public static bool IsPhone(string phone)
+        {
+            // +33 6 59 78 65 32
+            // 33 6 59 78 65 32
+            // 03 20 45 69 87
+            // 06-23-45-69-87
+            // 06.23.45.69.87
+            // 0723456987
+            string pattern = @"^([0|\+33|33]+)(\.|\-|\s)?([1-9]{1})((\.|\-|\s)?[0-9]{2}){4}$";
+            return Regex.IsMatch(phone, pattern);
+        }
+
+        // Créer une méthode pour vérifier l'age
+        public static bool IsNumeric(string chaine)
+        {
+            string pattern = @"^([0-9]+)(\,)?([0-9]*)$";
+            return Regex.IsMatch(chaine, pattern);
+        }
+
     }
 }
