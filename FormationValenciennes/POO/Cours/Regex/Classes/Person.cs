@@ -10,6 +10,7 @@ namespace ExpressionsReguliere.Classes
     {
         private string firstName;
         private string lastName;
+        private string email;
         private int age;
 
         public Person()
@@ -17,11 +18,12 @@ namespace ExpressionsReguliere.Classes
 
         }
 
-        public Person(string firstName, string lastName, int age)
+        public Person(string firstName, string lastName, int age, string email)
         {
             FirstName = firstName;
             LastName = lastName;
             Age = age;
+            Email = email;
         }
 
         public string FirstName 
@@ -36,13 +38,34 @@ namespace ExpressionsReguliere.Classes
             }
         }
 
-        public string LastName { get => lastName; set => lastName = value; }
+        public string LastName 
+        { 
+            get => lastName;
+            set
+            {
+                if (Tools.IsName(value))
+                    lastName = value;
+                else
+                    Console.WriteLine("Erreur nom...");
+            }
+        }
 
         public int Age { get => age; set => age = value; }
+        public string Email 
+        {
+            get => email;
+            set
+            {
+                if (Tools.IsEmail(value))
+                    email = value;
+                else
+                    Console.WriteLine("Erreur email...");
+            }
+        }
 
         public override string ToString()
         {
-            return $"{FirstName} {LastName} - {Age} ans";
+            return $"{FirstName} {LastName} - {Age} ans - {Email}";
         }       
     }
 }

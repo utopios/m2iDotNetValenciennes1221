@@ -8,7 +8,7 @@ namespace ExpressionsReguliere
         static void Main(string[] args)
         {
 
-            Person p1 = new Person("Chloë@", "Di Persio", 25);
+            Person p1 = new Person("Chloé", "Di Persio", 25,"anthony@utopios.net");
 
             Console.WriteLine(p1);
 

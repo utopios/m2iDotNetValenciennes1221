@@ -35,6 +35,13 @@ namespace ExpressionsReguliere.Classes
             string pattern = @"^[A-Z]{1}[a-zA-Z\séèë\-_]*$";
             return Regex.IsMatch(name, pattern);
         }
-        
+
+        // Créer Une méthode pour vérifier une adresse email:
+
+        public static bool IsEmail(string name)
+        { 
+            string pattern = @"^([a-zA-Z0-9\.\-_]+)@([a-zA-Z0-9\.\-_]+)\.([a-zA-Z]{2,11})$";
+            return Regex.IsMatch(name, pattern);
+        }
     }
 }
