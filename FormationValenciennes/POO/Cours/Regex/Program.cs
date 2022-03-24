@@ -39,7 +39,7 @@ namespace ExpressionsReguliere
             Console.WriteLine("Veuillez saisir votre email : ");
             string email = Console.ReadLine();
             Console.WriteLine("Veuillez saisir votre téléphone : ");
-            string phone = Console.ReadLine();
+            string phone =Tools.FormatPhone(Console.ReadLine());
 
             bool valid = false;
             int age=0;
