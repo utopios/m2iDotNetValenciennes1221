@@ -128,9 +128,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TpAnnuaireAspNETCore", "Asp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiRestFullCrudEtudiant", "AspNET\Nouveau dossier\ApiRestFullCrudEtudiant\ApiRestFullCrudEtudiant.csproj", "{719ED4C5-8E74-44D3-8541-8A8A35B82A3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpForumAspNETCore", "AspNET\TpForumAspNETCore\TpForumAspNETCore.csproj", "{22EF6AA7-EB2E-4121-AA04-70F222D1C84B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TpForumAspNETCore", "AspNET\TpForumAspNETCore\TpForumAspNETCore.csproj", "{22EF6AA7-EB2E-4121-AA04-70F222D1C84B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "correctionForum", "correctionForum\correctionForum.csproj", "{7D0AAF25-CBBE-4487-B4EE-D2D44990F0B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "correctionForum", "correctionForum\correctionForum.csproj", "{7D0AAF25-CBBE-4487-B4EE-D2D44990F0B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionsReguliere", "POO\Cours\Regex\ExpressionsReguliere.csproj", "{F5AB118D-4D5C-489B-9E39-5BB14938384B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -270,6 +272,10 @@ Global
 		{7D0AAF25-CBBE-4487-B4EE-D2D44990F0B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D0AAF25-CBBE-4487-B4EE-D2D44990F0B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D0AAF25-CBBE-4487-B4EE-D2D44990F0B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5AB118D-4D5C-489B-9E39-5BB14938384B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5AB118D-4D5C-489B-9E39-5BB14938384B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5AB118D-4D5C-489B-9E39-5BB14938384B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5AB118D-4D5C-489B-9E39-5BB14938384B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -323,6 +329,7 @@ Global
 		{55C6D2A6-AE0D-40E6-AD97-EF64336BFB4D} = {DFA538A2-D31E-4620-B39A-6220699AABB1}
 		{719ED4C5-8E74-44D3-8541-8A8A35B82A3D} = {E80B3431-D05F-4466-BFD4-ED212B59F643}
 		{22EF6AA7-EB2E-4121-AA04-70F222D1C84B} = {DFA538A2-D31E-4620-B39A-6220699AABB1}
+		{F5AB118D-4D5C-489B-9E39-5BB14938384B} = {2AA98A97-D9FD-4437-B5BB-8004FA34779D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {166A154C-763A-498A-9A9B-E77B3743B2AE}

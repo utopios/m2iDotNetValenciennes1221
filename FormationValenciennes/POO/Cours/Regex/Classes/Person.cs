@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SuiteCoursPOO.Classes
+namespace ExpressionsReguliere.Classes
 {
-    public abstract class Person 
+    public class Person 
     {
         private string firstName;
         private string lastName;
@@ -14,6 +14,7 @@ namespace SuiteCoursPOO.Classes
 
         public Person()
         {
+
         }
 
         public Person(string firstName, string lastName, int age)
@@ -26,19 +27,22 @@ namespace SuiteCoursPOO.Classes
         public string FirstName 
         { 
             get => firstName;
-            set => firstName = value; 
+            set
+            {
+                if (Tools.IsName(value))                
+                    firstName = value;                
+                else
+                    Console.WriteLine("Erreur prénom...");
+            }
         }
 
         public string LastName { get => lastName; set => lastName = value; }
 
         public int Age { get => age; set => age = value; }
 
-        public virtual void Afficher()
+        public override string ToString()
         {
-            Console.WriteLine($"{FirstName} {LastName} {Age}");
-        }
-
-        public abstract void MethodeAbstract();
-       
+            return $"{FirstName} {LastName} - {Age} ans";
+        }       
     }
 }
