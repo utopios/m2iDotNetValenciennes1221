@@ -7,6 +7,25 @@ namespace ExpressionsReguliere
     {
         static void Main(string[] args)
         {
+
+
+            // FormatPhone
+            string userPhone ="";
+
+            while (!Tools.IsPhone(userPhone))
+            {
+                Console.WriteLine("Erreur, Veuillez saisir une numero de téléphone \n Veuillez saisir un numéro de téléphone : ");
+               
+                userPhone = Console.ReadLine();
+            }
+
+            userPhone = Tools.FormatPhone(userPhone);
+            Console.WriteLine(userPhone);
+
+
+
+
+
             // REPLACE() => Remplace un caractere recherché par un autre
             string maChaine = "Bonjour,          je     m'appelle       Anthony      ";
             Console.WriteLine(Tools.ClearMultipleSpace(maChaine));

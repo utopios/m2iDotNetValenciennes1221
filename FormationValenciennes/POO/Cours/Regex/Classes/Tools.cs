@@ -48,7 +48,7 @@ namespace ExpressionsReguliere.Classes
         {
             // +33 6 59 78 65 32 => Le Bon Format
             // 33 6 59 78 65 32
-            // 03 20 45 69 87 => Le Bon Format
+            // 03 20 45 69 87
             // 06-23-45-69-87
             // 06.23.45.69.87
             // 0723456987
@@ -72,8 +72,20 @@ namespace ExpressionsReguliere.Classes
         public static string ClearMultipleSpace(string chaine)
         {
             string pattern = @"\s+";
-            string CleanedString = Regex.Replace(chaine, pattern, " ");
+            string CleanedString = Regex.Replace(chaine, pattern, " ");           
+
             return CleanedString;
+        }
+
+        public static string FormatPhone(string phone)
+        {
+            string pattern = @"[\.\-]+";
+            string FormatedString = Regex.Replace(phone, pattern, " ");
+
+            pattern = @"^(0|33)";
+            FormatedString = Regex.Replace(FormatedString, pattern, "+33 ");
+
+            return ClearMultipleSpace(FormatedString);
         }
 
     }
