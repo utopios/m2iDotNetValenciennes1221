@@ -23,12 +23,16 @@ namespace LesExceptions
                 Console.Write("Veuillez saisir votre age : ");
                 p1.Age = Convert.ToInt32(Console.ReadLine());
             }
-            catch (FormatException ex)
+            //catch (FormatException ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+            catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine("Autre chose : ",ex.Message);
             }
 
-            
+
 
             Console.WriteLine(p1);
             Console.WriteLine("Appuyez sur ENTER pour fermer le programme...");
