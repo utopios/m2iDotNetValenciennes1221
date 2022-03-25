@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExpressionsReguliere.Classes
+namespace LesExceptions.Classes
 {
     public class Person 
     {
@@ -33,10 +33,10 @@ namespace ExpressionsReguliere.Classes
             get => firstName;
             set
             {
-                if (Tools.IsName(value))
-                    firstName = value;
+                if (Tools.IsName(value))                
+                    firstName = value;                
                 else
-                    throw new FormatException("Erreur prénom...");
+                    Console.WriteLine("Erreur prénom...");
             }
         }
 
@@ -48,7 +48,7 @@ namespace ExpressionsReguliere.Classes
                 if (Tools.IsName(value))
                     lastName = value;
                 else
-                    throw new FormatException("Erreur nom...");
+                    Console.WriteLine("Erreur nom...");
             }
         }
 
@@ -60,7 +60,7 @@ namespace ExpressionsReguliere.Classes
                 if (value > 0 && value < 126)
                     age = value;
                 else
-                    throw new FormatException("Erreur age...");
+                    Console.WriteLine("Erreur age...");
             }
         }
         public string Email 
@@ -71,7 +71,7 @@ namespace ExpressionsReguliere.Classes
                 if (Tools.IsEmail(value))
                     email = value;
                 else
-                    throw new FormatException("Erreur email...");
+                    Console.WriteLine("Erreur email...");
             }
         }
 
@@ -83,7 +83,7 @@ namespace ExpressionsReguliere.Classes
                 if (Tools.IsPhone(value))
                     phone = value;
                 else
-                    throw new FormatException("Erreur phone...");
+                    Console.WriteLine("Erreur phone...");
             }
         }
 
