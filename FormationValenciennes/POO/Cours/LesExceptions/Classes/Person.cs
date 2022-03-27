@@ -28,42 +28,42 @@ namespace LesExceptions.Classes
             Phone = phone;
         }
 
-        public string FirstName 
-        { 
+        public string FirstName
+        {
             get => firstName;
             set
             {
-                if (Tools.IsName(value))                
-                    firstName = value;                
+                if (Tools.IsName(value))
+                    firstName = value;
                 else
-                    Console.WriteLine("Erreur prénom...");
+                    throw new FormatException("Erreur prénom...");
             }
         }
 
-        public string LastName 
-        { 
+        public string LastName
+        {
             get => lastName;
             set
             {
                 if (Tools.IsName(value))
                     lastName = value;
                 else
-                    Console.WriteLine("Erreur nom...");
+                    throw new FormatException("Erreur nom...");
             }
         }
 
-        public int Age 
-        { 
+        public int Age
+        {
             get => age;
             set
-            { 
+            {
                 if (value > 0 && value < 126)
                     age = value;
                 else
-                    Console.WriteLine("Erreur age...");
+                    throw new FormatException("Erreur age...");
             }
         }
-        public string Email 
+        public string Email
         {
             get => email;
             set
@@ -71,25 +71,25 @@ namespace LesExceptions.Classes
                 if (Tools.IsEmail(value))
                     email = value;
                 else
-                    Console.WriteLine("Erreur email...");
+                    throw new FormatException("Erreur email...");
             }
         }
 
-        public string Phone 
-        { 
+        public string Phone
+        {
             get => phone;
             set
             {
                 if (Tools.IsPhone(value))
                     phone = value;
                 else
-                    Console.WriteLine("Erreur phone...");
+                    throw new FormatException("Erreur phone...");
             }
         }
 
         public override string ToString()
         {
             return $"{FirstName} {LastName} - {Age} ans \n\tEmail : {Email}\n\tPhone : {Phone}";
-        }       
+        }
     }
 }

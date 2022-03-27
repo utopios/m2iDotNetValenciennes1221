@@ -134,9 +134,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "correctionForum", "correcti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressionsReguliere", "POO\Cours\Regex\ExpressionsReguliere.csproj", "{F5AB118D-4D5C-489B-9E39-5BB14938384B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LesExceptions", "POO\Cours\LesExceptions\LesExceptions.csproj", "{110E61AB-79EA-4756-B9DA-AEAE728021A7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpLesExceptions", "POO\TP\TpLesExceptions\TpLesExceptions.csproj", "{42A57DEC-9908-42CE-B723-4C3810887103}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LesExceptions", "POO\Cours\LesExceptions\LesExceptions.csproj", "{110E61AB-79EA-4756-B9DA-AEAE728021A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -284,10 +282,6 @@ Global
 		{110E61AB-79EA-4756-B9DA-AEAE728021A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{110E61AB-79EA-4756-B9DA-AEAE728021A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{110E61AB-79EA-4756-B9DA-AEAE728021A7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{42A57DEC-9908-42CE-B723-4C3810887103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{42A57DEC-9908-42CE-B723-4C3810887103}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{42A57DEC-9908-42CE-B723-4C3810887103}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{42A57DEC-9908-42CE-B723-4C3810887103}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -343,7 +337,6 @@ Global
 		{22EF6AA7-EB2E-4121-AA04-70F222D1C84B} = {DFA538A2-D31E-4620-B39A-6220699AABB1}
 		{F5AB118D-4D5C-489B-9E39-5BB14938384B} = {2AA98A97-D9FD-4437-B5BB-8004FA34779D}
 		{110E61AB-79EA-4756-B9DA-AEAE728021A7} = {2AA98A97-D9FD-4437-B5BB-8004FA34779D}
-		{42A57DEC-9908-42CE-B723-4C3810887103} = {99365DD3-5DF7-4DF1-9735-529B8FC15C7B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {166A154C-763A-498A-9A9B-E77B3743B2AE}

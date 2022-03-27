@@ -18,9 +18,11 @@ namespace ExpressionsReguliere
                 userPhone = Console.ReadLine();
             }
 
+
             userPhone = Tools.FormatPhone(userPhone);
             Console.WriteLine(userPhone);
 
+            // SPLIT
             string[] tabString= Regex.Split(userPhone, @"\s");
 
             foreach (string str in tabString)

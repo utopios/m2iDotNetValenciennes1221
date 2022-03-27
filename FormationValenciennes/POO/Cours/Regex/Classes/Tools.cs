@@ -20,8 +20,8 @@ namespace ExpressionsReguliere.Classes
          *  \D = Tout sauf les \d
          *  \W = Tout sauf les \w
          *  \S = Tout sauf les \s
-         *  [a-z] = Autoriser les lettres minuscule
-         *  [a-zA-Z] = Autoriser les lettres minuscule et majuscule
+         *  [a-z] = Range de valeur => Autoriser les lettres minuscule
+         *  [a-zA-Z] = Range de valeur => Autoriser les lettres minuscule et majuscule
          *  | = OU
          *  * = 0 ou plus
          *  + = au moins une fois
@@ -68,7 +68,7 @@ namespace ExpressionsReguliere.Classes
             string pattern = @"^[A-Z]{1}[a-zA-Z\séèë\-_\s]*$";
             return Regex.IsMatch(chaine, pattern);
         }
-
+        
         public static string ClearMultipleSpace(string chaine)
         {
             string pattern = @"\s+";

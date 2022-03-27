@@ -24,8 +24,7 @@ namespace LesGeneriques
             Console.WriteLine(obj3.EstEquivalent("Bonjour", "Bonjour"));
             #endregion
 
-
-            #region Les Queue<> FirstInFirstOut (FIFO)
+            #region Les Queues<> FirstInFirstOut (FIFO)
             Console.WriteLine("\n*** Les Queues<T> ***");
             Console.WriteLine("\nAvec des type int : ");
             Queue<int> file = new Queue<int>();
