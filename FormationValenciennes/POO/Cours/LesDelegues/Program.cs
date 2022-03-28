@@ -9,6 +9,12 @@ namespace LesDelegues
             Calculatrice c = new ();
             // Utilisation de notre delegué avec une fonction Addition()
             c.Calcule(15, 20, Addition);
+            // Utilisation de notre delegué avec une fonction Soustraction()
+            c.Calcule(15, 20, delegate (double a, double b) { return a - b; });
+            // Utilisation de notre delegué avec une fonction multiplication()
+            c.Calcule(15, 20, (double a, double b) => { return a * b; });
+            // Utilisation de notre delegué avec une fonction multiplication()
+            c.Calcule(15, 20, ( a, b ) =>  a / b );
 
             // Utilisation de notre delegué avec une fonction Afficher()
             c.HowToDisplay("Salut !", Afficher);
