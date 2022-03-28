@@ -19,7 +19,7 @@ namespace LesDelegues.Classes
         //    Console.WriteLine($"Le résultat du calcul est de : {methode(a, b)}");
         //}
 
-        // Il existe depuis c#7 deux délégués génériques pour définir les délégués:
+        // Il existe depuis c#9 deux délégués génériques pour définir les délégués:
         // Action<> => Délégué sans retour
         // Func<> => Délégué faisant un retour
 

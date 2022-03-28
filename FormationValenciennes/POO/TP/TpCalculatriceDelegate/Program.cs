@@ -24,6 +24,7 @@ namespace TpCalculatriceDelegate
             {
                 Console.Write("Erreur! Veuillez saisir un nombre : ");
             }
+
             Console.Write("Veuillez saisir un autre nombre : ");
             while (!double.TryParse(Console.ReadLine(), out nb2))
             {
