@@ -65,7 +65,7 @@ namespace TpCalculatriceDelegate
 
 
             // Affichage des résultats
-            Console.WriteLine($"Les résultats est : {resultat}");
+            Console.WriteLine($"Le résultat est : {resultat}");
 
 
 
@@ -74,7 +74,7 @@ namespace TpCalculatriceDelegate
         }
         public static void WaitUser()
         {
-            Console.WriteLine("Appouyez sur ENTER pour ferme le programme...");
+            Console.WriteLine("Appuyez sur ENTER pour ferme le programme...");
             Console.Read();
         }
 
