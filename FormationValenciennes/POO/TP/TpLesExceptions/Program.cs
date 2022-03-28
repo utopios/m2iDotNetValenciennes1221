@@ -1,4 +1,5 @@
 ﻿using System;
+using TpLesExceptions.Classes;
 
 namespace TpLesExceptions
 {
@@ -13,7 +14,9 @@ namespace TpLesExceptions
              * phone = +33 7 77 77 77 77
              * age = numérique
              */
-            Console.WriteLine("Hello World!");
+            
+            IHM.Start();
+
         }
     }
 }
