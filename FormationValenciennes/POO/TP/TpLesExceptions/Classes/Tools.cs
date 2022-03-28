@@ -23,7 +23,7 @@ namespace TpLesExceptions.Classes
 
         public static bool IsPhone(string phone)
         {           
-            string pattern = @"^([0|\+33|33]+)(\.|\-|\s)([1-9]{1})((\.|\-|\s)[0-9]{2}){4}$";
+            string pattern = @"^([0|\+33|33]+)(\.|\-|\s)?([1-9]{1})((\.|\-|\s)[0-9]{2}){4}$";
             return Regex.IsMatch(phone, pattern);
         }
        

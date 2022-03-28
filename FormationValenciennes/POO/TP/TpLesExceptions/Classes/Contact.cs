@@ -107,7 +107,7 @@ namespace TpLesExceptions.Classes
             command = new SqlCommand(request, connection);
             command.Parameters.Add(new SqlParameter("@nom", LastName.ToUpper()));
             command.Parameters.Add(new SqlParameter("@prenom", FirstName));
-            command.Parameters.Add(new SqlParameter("@email", Email));
+            command.Parameters.Add(new SqlParameter("@email", Email.ToLower()));
             command.Parameters.Add(new SqlParameter("@telephone", Tools.FormatPhone(Phone)));
             command.Parameters.Add(new SqlParameter("@age", Age));
             connection.Open();
@@ -125,7 +125,7 @@ namespace TpLesExceptions.Classes
             command = new SqlCommand(request, connection);
             command.Parameters.Add(new SqlParameter("@nom", LastName.ToUpper()));
             command.Parameters.Add(new SqlParameter("@prenom", FirstName));
-            command.Parameters.Add(new SqlParameter("@email", Email));
+            command.Parameters.Add(new SqlParameter("@email", Email.ToLower()));
             command.Parameters.Add(new SqlParameter("@telephone", Tools.FormatPhone(Phone)));
             command.Parameters.Add(new SqlParameter("@age", Age));
             command.Parameters.Add(new SqlParameter("@id", Id));

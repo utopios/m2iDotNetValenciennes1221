@@ -194,7 +194,7 @@ namespace TpLesExceptions.Classes
             if (contact != null && contact.Delete())
                 OnGreen("Contact supprimé");
             else
-                OnRed("Erreur lors de la suppression")
+                OnRed("Erreur lors de la suppression");
         }
 
         private static void ActionRechercherUtilisateur()
