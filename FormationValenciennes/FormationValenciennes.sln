@@ -142,6 +142,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassageParams", "POO\Cours\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LesDelegues", "POO\Cours\LesDelegues\LesDelegues.csproj", "{C09EFD32-1687-43D6-9196-194B63DA19F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpCalculatriceDelegate", "POO\TP\TpCalculatriceDelegate\TpCalculatriceDelegate.csproj", "{C83A9842-C423-4DD2-BBA6-8B70C5B51F6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -300,6 +302,10 @@ Global
 		{C09EFD32-1687-43D6-9196-194B63DA19F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C09EFD32-1687-43D6-9196-194B63DA19F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C09EFD32-1687-43D6-9196-194B63DA19F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C83A9842-C423-4DD2-BBA6-8B70C5B51F6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C83A9842-C423-4DD2-BBA6-8B70C5B51F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C83A9842-C423-4DD2-BBA6-8B70C5B51F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C83A9842-C423-4DD2-BBA6-8B70C5B51F6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -358,6 +364,7 @@ Global
 		{EE8D07A8-B118-4EDB-A36D-6AE5A09C99D8} = {99365DD3-5DF7-4DF1-9735-529B8FC15C7B}
 		{22B2C741-E381-4DAE-BDC3-D98F6D57CBD0} = {2AA98A97-D9FD-4437-B5BB-8004FA34779D}
 		{C09EFD32-1687-43D6-9196-194B63DA19F9} = {2AA98A97-D9FD-4437-B5BB-8004FA34779D}
+		{C83A9842-C423-4DD2-BBA6-8B70C5B51F6A} = {99365DD3-5DF7-4DF1-9735-529B8FC15C7B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {166A154C-763A-498A-9A9B-E77B3743B2AE}
