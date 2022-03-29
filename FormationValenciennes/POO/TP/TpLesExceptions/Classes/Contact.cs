@@ -52,7 +52,7 @@ namespace TpLesExceptions.Classes
                 if (Tools.IsAlphabetic(value))
                     firstName = value;
                 else
-                    throw new FormatException("Erreur, le prénom doit commencer par une majuscule et ne comporter de des lettres, des espaces, le tiret haut (-) et caractères accentués (é,è,ë).");
+                    throw new FormatException("Erreur, le prénom doit commencer par une majuscule et ne comporter que de des lettres, des espaces, le tiret haut (-) et caractères accentués (é,è,ë).");
             }
         }
         public string LastName 

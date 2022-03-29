@@ -3,16 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CorrectionPendu.Interfaces;
 
 namespace CorrectionPendu.Classes
 {
     public class Pendu
     {
 
-        private int nbEssai;
-        /// <summary>
-        /// Mot à trouver sera sous la forme ***** ou ______
-        /// </summary>
+        private int nbEssai;        
         private string masque;
         private string motAtrouve;
 
@@ -66,7 +64,7 @@ namespace CorrectionPendu.Classes
 
         }
 
-        public void GenererMasque(GenerateurDeMot generateur)
+        public void GenererMasque(IGenerateur generateur)
         {
             //On génère le mot aléatoire, grace au generateur, motAtrouve.
             motAtrouve = generateur.Generer();

@@ -10,9 +10,11 @@ namespace CorrectionPendu.Classes
     {
         private Pendu pendu;
         private GenerateurDeMot generateurDeMot;
+        //private GenerateurSql generateurDeMot;
 
         public IHM()
         {
+            //generateurDeMot = new GenerateurSql();
             generateurDeMot = new GenerateurDeMot();
         }
         public void Start()
@@ -37,10 +39,12 @@ namespace CorrectionPendu.Classes
             if(pendu.NbEssai > 0)
             {
                 Console.WriteLine("Bravo vous avez gagné !!!!!");
+                Console.Read();
             }
             else
             {
                 Console.WriteLine("Désolé, vous avez perdu :(");
+                Console.Read();
             }
         }
 
