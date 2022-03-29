@@ -14,5 +14,8 @@ Ajouter la connection string pour EF
 # 5 - Ajouter le service pour EF dans le fichier :
 Startup.cs
 
-# 6 - Ouvrir la console des package-Nugget
-Add-Migration InitialCreate
+# 6 - Apres toute modification des classes
+Add-Migration <Nom-Migration>
+
+# 7 - Mettre à jour la base de donée
+Update-Database
