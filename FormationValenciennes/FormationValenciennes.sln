@@ -182,6 +182,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityDataBaseFirst", "Form
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Annuaire", "FormationEntity\Tp\Annuaire\Annuaire.csproj", "{5EFFDF67-43F5-456B-83CA-20F988DA9122}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BanqueGuillaume", "BanqueGuillaume", "{5CFBB466-CD20-40C3-ACE4-C6E3472E874B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banque", "FormationEntity\Tp\Banque\Banque.csproj", "{8F025013-87A4-4930-96EF-AC9F8E4D5A45}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		FormationEntity\Tp\BanqueAspNETCore\BanqueRepository\BanqueRepository.projitems*{783b0c92-25e1-49df-a8d6-467cc572a4d8}*SharedItemsImports = 13
@@ -371,6 +375,10 @@ Global
 		{5EFFDF67-43F5-456B-83CA-20F988DA9122}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EFFDF67-43F5-456B-83CA-20F988DA9122}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EFFDF67-43F5-456B-83CA-20F988DA9122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F025013-87A4-4930-96EF-AC9F8E4D5A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F025013-87A4-4930-96EF-AC9F8E4D5A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F025013-87A4-4930-96EF-AC9F8E4D5A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F025013-87A4-4930-96EF-AC9F8E4D5A45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -444,6 +452,8 @@ Global
 		{54539417-F6BA-4D49-8B80-127F1CFFBB08} = {553785EA-B72B-4FD3-9B8D-F44CB5069A9F}
 		{C50F57DE-CF07-4C01-A9E1-75BBA08209B2} = {54539417-F6BA-4D49-8B80-127F1CFFBB08}
 		{5EFFDF67-43F5-456B-83CA-20F988DA9122} = {C77B1556-70AC-4600-A0B5-A3EE899903A5}
+		{5CFBB466-CD20-40C3-ACE4-C6E3472E874B} = {C77B1556-70AC-4600-A0B5-A3EE899903A5}
+		{8F025013-87A4-4930-96EF-AC9F8E4D5A45} = {5CFBB466-CD20-40C3-ACE4-C6E3472E874B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {166A154C-763A-498A-9A9B-E77B3743B2AE}
