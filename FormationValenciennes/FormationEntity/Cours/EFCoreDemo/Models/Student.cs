@@ -15,17 +15,17 @@ namespace EFCoreDemo.Models
 
         [Key]
         public int Id { get => id; set => id = value; }
-        [Required]
+        [Required(ErrorMessage = "Veuillez saisir un prénom!")]
         [Column("prenom")]
         public string Firstname { get => firstname; set => firstname = value; }
-        [Required]
+        [Required(ErrorMessage ="Veuillez saisir un nom!")]
         [Column("nom")]
         public string Lastname { get => lastname; set => lastname = value; }
-        [Required]
+        [Required(ErrorMessage = "Veuillez saisir un téléphone!")]
         [Column("telephone")]
         [MaxLength(17)]
         public string Phone { get => phone; set => phone = value; }
-        [Required]
+        [Required(ErrorMessage = "Veuillez saisir un email!")]
         [Column("email")]
         public string Email { get => email; set => email = value; }
 

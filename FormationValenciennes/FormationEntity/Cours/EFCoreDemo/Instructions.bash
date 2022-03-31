@@ -17,5 +17,5 @@ Startup.cs
 # 6 - Apres toute modification des classes
 Add-Migration <Nom-Migration>
 
-# 7 - Mettre à jour la base de donée
+# 7 - Mettre à jour la base de donnée
 Update-Database

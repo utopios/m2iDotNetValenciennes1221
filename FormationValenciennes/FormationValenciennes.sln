@@ -157,9 +157,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cours", "Cours", "{553785EA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tp", "Tp", "{2862574A-DD7A-4DC5-A047-674D263A851F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreDemo", "FormationEntity\Cours\EFCoreDemo\EFCoreDemo.csproj", "{536B7E2D-0096-41AC-9997-65C83C4C75CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreDemo", "FormationEntity\Cours\EFCoreDemo\EFCoreDemo.csproj", "{536B7E2D-0096-41AC-9997-65C83C4C75CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeFirst", "CodeFirst", "{C77B1556-70AC-4600-A0B5-A3EE899903A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBaseFirst", "DataBaseFirst", "{A1B6D0C0-389F-48A7-8E0B-683A2398E6E9}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BanqueRepository", "FormationEntity\Tp\BanqueAspNETCore\BanqueRepository\BanqueRepository.shproj", "{783B0C92-25E1-49DF-A8D6-467CC572A4D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BanqueRepositoryClass", "FormationEntity\Tp\BanqueAspNETCore\BanqueRepositoryClass\BanqueRepositoryClass.csproj", "{B54667B7-6A98-4A30-87C6-D69562B06898}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BanqueWeb", "FormationEntity\Tp\BanqueAspNETCore\BanqueWeb\BanqueWeb.csproj", "{2C4EB6A1-94F6-48C3-A11B-A2EF07DC8E05}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		FormationEntity\Tp\BanqueAspNETCore\BanqueRepository\BanqueRepository.projitems*{783b0c92-25e1-49df-a8d6-467cc572a4d8}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -329,6 +342,14 @@ Global
 		{536B7E2D-0096-41AC-9997-65C83C4C75CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{536B7E2D-0096-41AC-9997-65C83C4C75CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{536B7E2D-0096-41AC-9997-65C83C4C75CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B54667B7-6A98-4A30-87C6-D69562B06898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B54667B7-6A98-4A30-87C6-D69562B06898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B54667B7-6A98-4A30-87C6-D69562B06898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B54667B7-6A98-4A30-87C6-D69562B06898}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C4EB6A1-94F6-48C3-A11B-A2EF07DC8E05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4EB6A1-94F6-48C3-A11B-A2EF07DC8E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4EB6A1-94F6-48C3-A11B-A2EF07DC8E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4EB6A1-94F6-48C3-A11B-A2EF07DC8E05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -393,6 +414,11 @@ Global
 		{553785EA-B72B-4FD3-9B8D-F44CB5069A9F} = {0AB501C5-E58E-4D4F-8E97-A1308A8D0DA4}
 		{2862574A-DD7A-4DC5-A047-674D263A851F} = {0AB501C5-E58E-4D4F-8E97-A1308A8D0DA4}
 		{536B7E2D-0096-41AC-9997-65C83C4C75CD} = {553785EA-B72B-4FD3-9B8D-F44CB5069A9F}
+		{C77B1556-70AC-4600-A0B5-A3EE899903A5} = {2862574A-DD7A-4DC5-A047-674D263A851F}
+		{A1B6D0C0-389F-48A7-8E0B-683A2398E6E9} = {2862574A-DD7A-4DC5-A047-674D263A851F}
+		{783B0C92-25E1-49DF-A8D6-467CC572A4D8} = {C77B1556-70AC-4600-A0B5-A3EE899903A5}
+		{B54667B7-6A98-4A30-87C6-D69562B06898} = {C77B1556-70AC-4600-A0B5-A3EE899903A5}
+		{2C4EB6A1-94F6-48C3-A11B-A2EF07DC8E05} = {C77B1556-70AC-4600-A0B5-A3EE899903A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {166A154C-763A-498A-9A9B-E77B3743B2AE}
