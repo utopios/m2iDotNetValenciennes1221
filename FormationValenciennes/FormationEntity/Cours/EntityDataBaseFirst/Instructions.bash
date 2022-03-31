@@ -9,4 +9,4 @@ Microsoft.EntityFrameworkCore.Tools
 # 3 - Générer les classes depuis la BDD => saisir instarcution dans le gestionnaire de packages nuggets
 Scaffold-DbContext Name="EFCoreDataBaseFirstContextConnection" Microsoft.EntityFrameworkCore.SqlServer -outputDir Models
 
-# 4 - Créer les controleurs & vues depuis nos models et note DBcontext
+# 4 - Créer les controleurs & vues depuis nos models et notre DBcontext
