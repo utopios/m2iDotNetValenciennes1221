@@ -148,6 +148,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LesInterfaces", "POO\Cours\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "§Solution Items§", "§Solution Items§", "{8ACEEC76-9C37-4560-AB46-16A00A73FB43}"
 	ProjectSection(SolutionItems) = preProject
+		FormationEntity\Cours\EntityDataBaseFirst\dbo-EFCoreDataBaseFirst.sql = FormationEntity\Cours\EntityDataBaseFirst\dbo-EFCoreDataBaseFirst.sql
 		image.png = image.png
 	EndProjectSection
 EndProject
@@ -156,6 +157,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cours", "Cours", "{553785EA-B72B-4FD3-9B8D-F44CB5069A9F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tp", "Tp", "{2862574A-DD7A-4DC5-A047-674D263A851F}"
+	ProjectSection(SolutionItems) = preProject
+		Script.sql = Script.sql
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreDemo", "FormationEntity\Cours\EFCoreDemo\EFCoreDemo.csproj", "{536B7E2D-0096-41AC-9997-65C83C4C75CD}"
 EndProject

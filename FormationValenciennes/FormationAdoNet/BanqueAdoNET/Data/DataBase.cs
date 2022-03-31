@@ -7,7 +7,7 @@ namespace BanqueAdoNET.Data
 {
     class DataBase
     {
-        private static string chaine = @"Data Source=(Localdb)\M2iCT;Integrated Security=True";
+        private static string chaine = @"Data Source=(Localdb)\M2IValenciennes;Integrated Security=True";
 
         public static SqlConnection Connection { get => new SqlConnection(chaine); }
     }
