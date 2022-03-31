@@ -36,10 +36,8 @@ INSERT INTO [dbo].[client] ( [nom], [prenom], [telephone])
 VALUES ( N'Di Persio', N'Anthony', N'+33 6 85 74 12 36'),
 	   ( N'Abadi', N'Ihab', N'+33 6 74 12 58 96'),
 	   ( N'Abadi', N'Marine', N'+33 6 45 78 62 32'),
-	   ( N'Dark', N'Jeanne', N'+33 6 74 85 96 32'),
-	   ( N'Dark', N'Jeanne', N'+33 6 41 52 63 98'),
-	   ( N'Apeupré', N'Jean-Michel', N'+33 6 41 52 78 96'),
-	   ( N'Apeupré', N'Jean-Michel', N'+33 6 52 14 85 96'),
+	   ( N'Dark', N'Jeanne', N'+33 6 74 85 96 32'),	   
+	   ( N'Apeupré', N'Jean-Michel', N'+33 6 41 52 78 96'),	   
 	   ( N'Doe', N'Janes', N'+33 6 41 52 78 54'),
 	   ( N'Toto', N'Titi', N'+33 6 52 41 78 96')
 

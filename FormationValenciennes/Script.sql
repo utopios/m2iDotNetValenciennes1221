@@ -1,6 +1,6 @@
-CREATE DATABASE [Corporation]
-GO
-USE [Corporation]
+DROP TABLE [SoldItems]
+DROP TABLE [Stores]
+
 GO
 SET ANSI_NULLS ON
 GO
