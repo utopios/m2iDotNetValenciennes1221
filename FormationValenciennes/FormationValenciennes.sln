@@ -158,7 +158,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cours", "Cours", "{553785EA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tp", "Tp", "{2862574A-DD7A-4DC5-A047-674D263A851F}"
 	ProjectSection(SolutionItems) = preProject
-		Script.sql = Script.sql
+		Tp1.sql = Tp1.sql
+		Tp2.sql = Tp2.sql
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreDemo", "FormationEntity\Cours\EFCoreDemo\EFCoreDemo.csproj", "{536B7E2D-0096-41AC-9997-65C83C4C75CD}"
