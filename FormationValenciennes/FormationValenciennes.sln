@@ -150,6 +150,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "§Solution Items§", "§Sol
 	ProjectSection(SolutionItems) = preProject
 		FormationEntity\Cours\EntityDataBaseFirst\dbo-EFCoreDataBaseFirst.sql = FormationEntity\Cours\EntityDataBaseFirst\dbo-EFCoreDataBaseFirst.sql
 		image.png = image.png
+		Tp1.sql = Tp1.sql
+		Tp2.sql = Tp2.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FormationEntity", "FormationEntity", "{0AB501C5-E58E-4D4F-8E97-A1308A8D0DA4}"
@@ -157,10 +159,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cours", "Cours", "{553785EA-B72B-4FD3-9B8D-F44CB5069A9F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tp", "Tp", "{2862574A-DD7A-4DC5-A047-674D263A851F}"
-	ProjectSection(SolutionItems) = preProject
-		Tp1.sql = Tp1.sql
-		Tp2.sql = Tp2.sql
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreDemo", "FormationEntity\Cours\EFCoreDemo\EFCoreDemo.csproj", "{536B7E2D-0096-41AC-9997-65C83C4C75CD}"
 EndProject
@@ -178,13 +176,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeFirst", "CodeFirst", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBaseFirst", "DataBaseFirst", "{54539417-F6BA-4D49-8B80-127F1CFFBB08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityDataBaseFirst", "FormationEntity\Cours\EntityDataBaseFirst\EntityDataBaseFirst.csproj", "{C50F57DE-CF07-4C01-A9E1-75BBA08209B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityDataBaseFirst", "FormationEntity\Cours\EntityDataBaseFirst\EntityDataBaseFirst.csproj", "{C50F57DE-CF07-4C01-A9E1-75BBA08209B2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Annuaire", "FormationEntity\Tp\Annuaire\Annuaire.csproj", "{5EFFDF67-43F5-456B-83CA-20F988DA9122}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BanqueGuillaume", "BanqueGuillaume", "{5CFBB466-CD20-40C3-ACE4-C6E3472E874B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banque", "FormationEntity\Tp\Banque\Banque.csproj", "{8F025013-87A4-4930-96EF-AC9F8E4D5A45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiRestFullCrudEtudiantEntity", "AspNET\Nouveau dossier\ApiRestFullCrudEtudiantEntity\ApiRestFullCrudEtudiantEntity.csproj", "{A365F283-7407-4576-9EF2-6200B2F5287F}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -379,6 +379,10 @@ Global
 		{8F025013-87A4-4930-96EF-AC9F8E4D5A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F025013-87A4-4930-96EF-AC9F8E4D5A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F025013-87A4-4930-96EF-AC9F8E4D5A45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A365F283-7407-4576-9EF2-6200B2F5287F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A365F283-7407-4576-9EF2-6200B2F5287F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A365F283-7407-4576-9EF2-6200B2F5287F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A365F283-7407-4576-9EF2-6200B2F5287F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -454,6 +458,7 @@ Global
 		{5EFFDF67-43F5-456B-83CA-20F988DA9122} = {C77B1556-70AC-4600-A0B5-A3EE899903A5}
 		{5CFBB466-CD20-40C3-ACE4-C6E3472E874B} = {C77B1556-70AC-4600-A0B5-A3EE899903A5}
 		{8F025013-87A4-4930-96EF-AC9F8E4D5A45} = {5CFBB466-CD20-40C3-ACE4-C6E3472E874B}
+		{A365F283-7407-4576-9EF2-6200B2F5287F} = {E80B3431-D05F-4466-BFD4-ED212B59F643}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {166A154C-763A-498A-9A9B-E77B3743B2AE}
