@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using ApiProverbsEntity.Models;
 using ApiProverbsEntity.Tools;
 using ApiProverbsEntity.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ApiProverbsEntity.Controllers
 {
@@ -35,6 +36,14 @@ namespace ApiProverbsEntity.Controllers
             else
                 //return Ok(new{ error = false, UserName = user.UserName, Token = user.Token});
                 return Ok(new{ error = false, user.UserName, Token = token });
+        }
+
+        [Authorize]
+        [Route("/testLogin")]
+        [HttpPost]
+        public ActionResult TestLogin()
+        {
+            return Ok(new { error = false });
         }
 
         // GET: api/Users
