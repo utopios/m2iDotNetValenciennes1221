@@ -33,7 +33,8 @@ namespace ApiProverbsEntity.Tools
 
             // 3 - Création d'une variable descriptor pour le contenu du JWT
             SecurityTokenDescriptor descriptor = new SecurityTokenDescriptor();
-
+            descriptor.Audience = "mettre l'audience";
+            descriptor.Issuer = "mettre l'issuer";
             descriptor.Subject = new ClaimsIdentity(new Claim[]
             {
                 // Contenu du JWT => Création des elements transitant dans le JWT
@@ -45,7 +46,7 @@ namespace ApiProverbsEntity.Tools
             //descriptor.Expires = DateTime.Now.AddDays(1);
             descriptor.Expires = DateTime.Now.AddHours(1);
             //descriptor.Expires = DateTime.Now.AddMinutes(1);
-
+            
             // 5 - Signature pour le JWT
             descriptor.SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature);
 
