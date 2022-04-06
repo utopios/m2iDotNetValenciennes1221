@@ -3,18 +3,13 @@ using ApiProverbsEntity.Tools;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace ApiProverbsEntity
 {
@@ -35,6 +30,19 @@ namespace ApiProverbsEntity
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ApiProverbsEntity", Version = "v1" });
+            });
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("admin", police =>
+                {
+                    police.RequireClaim(ClaimTypes.Role, "admin");
+
+                });
+                options.AddPolicy("user", police =>
+                {
+                    police.RequireClaim(ClaimTypes.Role, "user", "admin");
+                });
             });
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
@@ -90,9 +98,10 @@ namespace ApiProverbsEntity
 
             app.UseRouting();
 
-            app.UseAuthorization();
-
             app.UseAuthentication();
+
+            app.UseAuthorization();
+                       
 
             app.UseEndpoints(endpoints =>
             {

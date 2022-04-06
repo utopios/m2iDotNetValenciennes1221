@@ -38,7 +38,8 @@ namespace ApiProverbsEntity.Tools
             {
                 // Contenu du JWT => Création des elements transitant dans le JWT
                 new Claim(ClaimTypes.Name, user.UserName),
-                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())                
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),               
+                new Claim(ClaimTypes.Role, "admin")                
             });
 
             // 4 - Date Expiration du Token

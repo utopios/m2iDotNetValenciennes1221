@@ -38,7 +38,7 @@ namespace ApiProverbsEntity.Controllers
                 return Ok(new{ error = false, user.UserName, Token = token });
         }
 
-        [Authorize]
+        [Authorize("admin")]
         [Route("/testLogin")]
         [HttpPost]
         public ActionResult TestLogin()

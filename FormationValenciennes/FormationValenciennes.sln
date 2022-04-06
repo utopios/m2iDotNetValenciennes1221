@@ -186,7 +186,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banque", "FormationEntity\T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiRestFullCrudEtudiantEntity", "AspNET\Nouveau dossier\ApiRestFullCrudEtudiantEntity\ApiRestFullCrudEtudiantEntity.csproj", "{A365F283-7407-4576-9EF2-6200B2F5287F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiProverbsEntity", "AspNET\ApiProverbsEntity\ApiProverbsEntity.csproj", "{84C1AA49-903C-44A2-9AC8-6B3C209CE677}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiProverbsEntity", "AspNET\ApiProverbsEntity\ApiProverbsEntity.csproj", "{84C1AA49-903C-44A2-9AC8-6B3C209CE677}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoursHashMD5", "AspNET\Nouveau dossier\CoursHashMD5\CoursHashMD5.csproj", "{31C5C4AE-2778-454D-B987-94DCA5B6B637}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -389,6 +391,10 @@ Global
 		{84C1AA49-903C-44A2-9AC8-6B3C209CE677}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84C1AA49-903C-44A2-9AC8-6B3C209CE677}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84C1AA49-903C-44A2-9AC8-6B3C209CE677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31C5C4AE-2778-454D-B987-94DCA5B6B637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31C5C4AE-2778-454D-B987-94DCA5B6B637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31C5C4AE-2778-454D-B987-94DCA5B6B637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31C5C4AE-2778-454D-B987-94DCA5B6B637}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -466,6 +472,7 @@ Global
 		{8F025013-87A4-4930-96EF-AC9F8E4D5A45} = {5CFBB466-CD20-40C3-ACE4-C6E3472E874B}
 		{A365F283-7407-4576-9EF2-6200B2F5287F} = {E80B3431-D05F-4466-BFD4-ED212B59F643}
 		{84C1AA49-903C-44A2-9AC8-6B3C209CE677} = {DFA538A2-D31E-4620-B39A-6220699AABB1}
+		{31C5C4AE-2778-454D-B987-94DCA5B6B637} = {E80B3431-D05F-4466-BFD4-ED212B59F643}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {166A154C-763A-498A-9A9B-E77B3743B2AE}
