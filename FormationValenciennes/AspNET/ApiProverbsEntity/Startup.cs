@@ -1,4 +1,6 @@
+using ApiProverbsEntity.Interfaces;
 using ApiProverbsEntity.Tools;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -6,10 +8,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace ApiProverbsEntity
@@ -32,6 +36,40 @@ namespace ApiProverbsEntity
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ApiProverbsEntity", Version = "v1" });
             });
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = Configuration["Jwt:Issuer"],
+                    ValidAudience = Configuration["Jwt:Issuer"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
+                };
+            });
+
+            const string corsUrlKey = "Security:Cors:Url";
+
+            // Parametres CORS (Origine)
+            services.AddCors(cors =>
+            {
+                string url = this.Configuration[corsUrlKey];
+                cors.AddPolicy("AllowAll", o =>
+                {
+                    o.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                });
+                //cors.AddPolicy("LimitToOneOrigin", o =>
+                //{
+                //    o.WithOrigins("192.168.0.1").AllowAnyMethod().AllowAnyHeader();
+                //});
+            });
+
+            services.AddTransient<ILoginService, LoginService>();
+
+
             services.AddDbContext<DataDbContext>();
         }
 
@@ -45,9 +83,16 @@ namespace ApiProverbsEntity
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ApiProverbsEntity v1"));
             }
 
+            app.UseCors(options =>
+            {
+                options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+            });
+
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
