@@ -29,18 +29,18 @@ namespace ApiProverbsEntity.Tools
             JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();
 
             // 2 - Création d'un clé => Convertir la chaine de cryptage en byte
-            byte[] key = Encoding.ASCII.GetBytes("je suis une chaine secrete");
+            byte[] key = Encoding.ASCII.GetBytes("jesuisunechainesecrete");
 
             // 3 - Création d'une variable descriptor pour le contenu du JWT
             SecurityTokenDescriptor descriptor = new SecurityTokenDescriptor();
-            descriptor.Audience = "mettre l'audience";
-            descriptor.Issuer = "mettre l'issuer";
+            descriptor.Audience = "http://localhost:24516/";
+            descriptor.Issuer = "www.utopios.net";
             descriptor.Subject = new ClaimsIdentity(new Claim[]
             {
                 // Contenu du JWT => Création des elements transitant dans le JWT
                 new Claim(ClaimTypes.Name, user.UserName),
-                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),               
-                new Claim(ClaimTypes.Role, "admin")                
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                new Claim(ClaimTypes.Role, user.IsAdmin ? "admin" : "user"),
             });
 
             // 4 - Date Expiration du Token

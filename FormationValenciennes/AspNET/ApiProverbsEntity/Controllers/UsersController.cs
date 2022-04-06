@@ -38,7 +38,7 @@ namespace ApiProverbsEntity.Controllers
                 return Ok(new{ error = false, user.UserName, Token = token });
         }
 
-        [Authorize("admin")]
+        [Authorize("user")]
         [Route("/testLogin")]
         [HttpPost]
         public ActionResult TestLogin()
@@ -47,6 +47,7 @@ namespace ApiProverbsEntity.Controllers
         }
 
         // GET: api/Users
+        [Authorize("admin")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
