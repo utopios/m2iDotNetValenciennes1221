@@ -33,7 +33,7 @@ namespace ApiProverbsEntity.Tools
 
             // 3 - Création d'une variable descriptor pour le contenu du JWT
             SecurityTokenDescriptor descriptor = new SecurityTokenDescriptor();
-            descriptor.Audience = "http://localhost:24516/";
+            descriptor.Audience = "http://localhost:17777/";
             descriptor.Issuer = "www.utopios.net";
             descriptor.Subject = new ClaimsIdentity(new Claim[]
             {
