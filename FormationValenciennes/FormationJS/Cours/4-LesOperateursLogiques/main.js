@@ -25,7 +25,7 @@ result.innerHTML=resultat;
 
 
 /*
-    L'opérateur logique || = OU
+    L'opérateur logique || = OU 
 */
 
 // Exemple de vérification si un nombre est inférieur à 1 ou supérieur à 3

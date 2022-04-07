@@ -28,7 +28,7 @@ else
     Avec Sinon Si (Nouveau test logique)
 */
 
-compte = 00;
+compte = 100;
 if (compte > 0)
     console.log(`Vous avez ${compte} €, vous êtes créditeur!`);
 else if (compte == 0)
