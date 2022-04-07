@@ -24,7 +24,7 @@ affichage +=`Vous avez saisi : <b>${nom}</b> <br>`;
 resultat = prenom + " " + nom;
 
 // Rédaction de l'affichage du résultat
-affichage += `Bonjour <b>${prenom}</b> <b>${nom}</b> , le nom complet => ${resultat}<br>`
+affichage += `Bonjour <b>${prenom}</b> <b>${nom}</b> , le nom complet =><b> ${resultat}</b><hr>`
 
 // Affichage des résultats
 //alert(affichage);
