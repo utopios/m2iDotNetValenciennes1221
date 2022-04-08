@@ -11,8 +11,7 @@ Valider = () => {
 }
 
 Afficher = () =>{
-    result.innerHTML = `<h3>Vous avez saisi : ${Nom}  ${Prenom}</h3>`;    
-    event.preventDefault();
+    result.innerHTML = `<h3>Vous avez saisi : ${Nom}  ${Prenom}</h3>`;
 }
 
 
