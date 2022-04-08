@@ -1,13 +1,18 @@
-const inputNom = document.querySelector('#nom');
-const inputPrenom = document.querySelector('#prenom');
 const result = document.querySelector('#result');
 
-let message="";
+let message="",
+    Nom,
+    Prenom;
 
-Valider = () => {
-    
-    alert(inputPrenom.value +" "+ inputNom.value)
-    result.innerHTML = `<h3>Vous avez saisi : ${inputNom.value}  ${inputPrenom.value}</h3>`;
+Valider = () => {   
+    Nom = document.querySelector('#nom').value;
+    Prenom = document.querySelector('#prenom').value;   
+    Afficher();
+}
+
+Afficher = () =>{
+    result.innerHTML = `<h3>Vous avez saisi : ${Nom}  ${Prenom}</h3>`;    
+    event.preventDefault();
 }
 
 
