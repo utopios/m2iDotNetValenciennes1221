@@ -7,8 +7,30 @@ function Header(){
     )
 }
 
+// // V1
+// function Description(){
+//     return (<p>Votre formation sur mesure...</p>)
+// }
+
+function Description(){
+    const text = "Votre formation sur mesure...";
+    return(
+        <span><i>{text.toLocaleLowerCase()}</i></span>
+    )
+}
+
+function Banner(){
+    return(
+        <div className="banner">
+            <Header/>
+            <div className="description">
+                <Description/>
+            </div>
+        </div>
+    )
+}
 
 /**
- * Rendu vers le Virtual DOM (Elements parent de plussieur composants , utilisation des react.fragments)
+ * Rendu vers le Virtual DOM (Elements parent de plusieur composants , utilisation des react.fragments)
  */
-ReactDOM.render(<Header/>, document.getElementById("app"));
+ReactDOM.render(<React.Fragment><Banner/></React.Fragment>, document.getElementById("app"));

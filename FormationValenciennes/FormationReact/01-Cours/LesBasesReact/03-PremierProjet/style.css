@@ -1,5 +1,9 @@
-.header{
+.header,.banner{
     align-items: center;
     display: flex;
     justify-content: center;
+}
+
+.description{
+    transform:translateX(50%)
 }
