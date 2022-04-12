@@ -15,7 +15,7 @@
     background-color: lightskyblue ;
     height: 400px;
 }
-.center{
+#center{
     background-color: lightgreen ;
     height: 400px;
 }
@@ -32,3 +32,8 @@
     height: 100px;
     text-align: center;
 }
+
+.TitreH2{
+    color:blueviolet
+}
+

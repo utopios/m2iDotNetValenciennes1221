@@ -17,15 +17,15 @@ function Description() {
 function LeftComponent() {
     return (
         <div className="left">
-            LEFT
+            <h2>LEFT</h2>
         </div>
     )
 }
 
 function CenterComponent() {
     return (
-        <div className="center">
-            <h2>Le composant au centre</h2>
+        <div id="center">
+            <h2 className="TitreH2">Le composant au centre</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quibusdam asperiores vitae totam dolor accusantium mollitia nam minus cum saepe exercitationem tempore vel sit, perspiciatis suscipit ex in sed quisquam?</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quibusdam asperiores vitae totam dolor accusantium mollitia nam minus cum saepe exercitationem tempore vel sit, perspiciatis suscipit ex in sed quisquam?</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quibusdam asperiores vitae totam dolor accusantium mollitia nam minus cum saepe exercitationem tempore vel sit, perspiciatis suscipit ex in sed quisquam?</p>
@@ -36,7 +36,7 @@ function CenterComponent() {
 function RightComponent() {
     return (
         <div className="right">
-            RIGHT
+            <h2>RIGHT</h2>
         </div>
     )
 }
