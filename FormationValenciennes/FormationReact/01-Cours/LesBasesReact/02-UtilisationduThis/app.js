@@ -7,12 +7,12 @@ const link =document.querySelector('#link');
 // Propagation d'un evenement avec une fonction fléchée (arrow function)
 link.addEventListener('click',(event)=>{
     alert(`Arrow Function, this => ${this} and event sources is : ${event}` ); //this === window
-})
+});
 
 // Propagation d'un evenement avec une fonction fléchée (arrow function)
 link.addEventListener('click', function () {
-    Console.log(`ClassicFunction, this => `+this ); // this => Button (Link element)
-})
+    Console.log(`ClassicFunction, this => `+ this ); // this => Button (Link element)
+});
 
 // Appel de fonction depuis l'event click du boutton
 function ClickFunction(){
