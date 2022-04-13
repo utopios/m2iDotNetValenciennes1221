@@ -1,3 +1,28 @@
-.formation-card{
-    color: rgb(40, 40, 40);
+.card{
+    border-radius: 25px;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+}
+.card-title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.img{
+    width: 300px;
+    transform: translateX(-21px);
+}
+
+.category{
+    margin: 15px 0;
+}
+
+.difficulty{
+    margin-bottom: 15px
+}
+
+.price{
+    font-size: larger;
 }

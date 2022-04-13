@@ -1,7 +1,8 @@
 import Banner from './components/BannerComponent/Banner';
 import NavBar from './components/NavBarComponent/NavBar';
-import './App.css';
 import Footer from './components/FooterComponent/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 
 
