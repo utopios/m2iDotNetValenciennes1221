@@ -7,11 +7,11 @@
     height: 30px;
 }
 
-a{
+.footer a{
     text-decoration: none;
     color: white;
 }
 
-a:hover{
+.footer a:hover{
     color: orangered;
 }

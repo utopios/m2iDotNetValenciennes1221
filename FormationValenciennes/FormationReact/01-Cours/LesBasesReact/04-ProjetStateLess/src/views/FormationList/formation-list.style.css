@@ -1,13 +1,15 @@
 .formation-list{
     color: rgb(40, 40, 40);
 }
-.search{
 
-}
 
 .card-container{
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.paddingTop{
+    padding-top: 20px;
 }

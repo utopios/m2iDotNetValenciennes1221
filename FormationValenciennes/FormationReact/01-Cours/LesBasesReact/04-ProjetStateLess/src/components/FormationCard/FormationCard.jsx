@@ -13,8 +13,8 @@ const FormationCard = (cours, index) => {
                 <img className='img' src={cours.logo} alt="Formation-Logo" />
             </div>
             <div className="category">
-                <span>Catégory : </span>
-                {cours.category}
+                <span>Catégorie : {cours.category}</span>
+                
             </div>
             <div className="difficulty">
                 <span className='diff-label'>Difficulté : </span>

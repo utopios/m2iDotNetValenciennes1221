@@ -1,4 +1,5 @@
 import React from 'react';
+import './care-scale.style.css';
 
 const CareScale = ({scaleValue}) => {
     const quantityLabel = {

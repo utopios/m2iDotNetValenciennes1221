@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Banner from './components/BannerComponent/Banner';
 import NavBar from './components/NavBarComponent/NavBar';
 import Footer from './components/FooterComponent/Footer';
@@ -7,10 +8,12 @@ import './App.css';
 
 
 function App() {
+  const [cart,updateCart] = useState([]);
+
   return (
     <div className="App">
       <Banner/>
-      <NavBar/>
+      <NavBar cart={cart} updateCart = {updateCart}/>
       <Footer/>
     </div>
   );

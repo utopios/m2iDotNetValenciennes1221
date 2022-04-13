@@ -13,12 +13,12 @@ import './navbar.style.css';
 
 
 
-const NavBar = () => {
+const NavBar = ({cart, updateCart}) => {
     return (
         <div >
 
             <BrowserRouter >
-                <div className='navbar'>
+                <div id='navbar'>
                     <button className='bouton'>
                         <Link to="/">Home</Link>
                     </button>
@@ -31,7 +31,7 @@ const NavBar = () => {
                 </div>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/list" element={<FormationList/>} />
+                    <Route path="/list" element={<FormationList cart={cart} updateCart={updateCart}/>} />
                     <Route path="/about" element={<About />} />
                     <Route path="/*" element={<Home />} />
                 </Routes>
