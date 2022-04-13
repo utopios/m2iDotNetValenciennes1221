@@ -10,6 +10,7 @@ import Home from '../../views/HomeComponent/Home';
 import About from '../../views/AboutComponent/About';
 import FormationList from '../../views/FormationList/FormationList';
 import './navbar.style.css';
+import Form from '../../views/FormComponent/Form';
 
 
 
@@ -26,12 +27,16 @@ const NavBar = ({cart, updateCart}) => {
                         <Link to="/list">List</Link>
                     </button>
                     <button className='bouton'>
+                        <Link to="/form">Form</Link>
+                    </button>
+                    <button className='bouton'>
                         <Link to="about">About</Link>
                     </button>
                 </div>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/list" element={<FormationList cart={cart} updateCart={updateCart}/>} />
+                    <Route path="/form" element={<Form/>} />
                     <Route path="/about" element={<About />} />
                     <Route path="/*" element={<Home />} />
                 </Routes>
