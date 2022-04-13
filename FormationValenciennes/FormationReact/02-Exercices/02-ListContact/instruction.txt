@@ -1,0 +1,6 @@
+Créer une application avec des composant stateless permettant de:
+
+1- Afficher une liste de contacts (nom, prenom, email, phone)
+
+2- Créer un compoant pour ajouter des contact à la liste
+
