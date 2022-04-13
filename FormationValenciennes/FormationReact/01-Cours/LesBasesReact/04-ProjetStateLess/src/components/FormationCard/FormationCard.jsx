@@ -1,8 +1,9 @@
 import React from 'react';
+import CareScale from '../CareScaleComponent/CareScale';
 import './formation-card.style.css';
 
 const FormationCard = (cours, index) => {
-    console.log(index + " : " + cours.name);
+    //console.log(index + " : " + cours.name);
     return (
         <div className='card' key={index}>
             <div className="card-title">
@@ -16,11 +17,12 @@ const FormationCard = (cours, index) => {
                 {cours.category}
             </div>
             <div className="difficulty">
-                <span>Difficulté : </span>
-                {cours.difficulte}
+                <span className='diff-label'>Difficulté : </span>
+                <CareScale scaleValue={cours.difficulte} className="stars"/>
+               
             </div>
             <div className="price">
-                Price : <b>{cours.price}€</b>
+                <span>Price :</span> <b>{cours.price}€</b>
             </div>
         </div>
     );

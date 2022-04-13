@@ -20,9 +20,19 @@
 }
 
 .difficulty{
-    margin-bottom: 15px
+    display:flex;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .price{
     font-size: larger;
+}
+.diff-label{
+    margin-right: 10px;
+}
+.stars{
+    margin-left: auto;
+    margin-right: auto;
 }
