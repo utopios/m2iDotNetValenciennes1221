@@ -25,6 +25,7 @@ const Navbar = ({ PersonList, updatePersonList }) => {
                     <button className='bouton'>
                         <Link to="/add">Add</Link>
                     </button>
+                    <hr/>
                 </div>
             
             <Routes>
