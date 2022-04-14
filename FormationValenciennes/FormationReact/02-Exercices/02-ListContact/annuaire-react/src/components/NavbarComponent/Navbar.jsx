@@ -6,6 +6,8 @@ import {
     Outlet,
     Link
 } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faAddressCard, faFolderPlus } from "@fortawesome/free-solid-svg-icons";
 import AddPerson from '../../views/AddPersonComponent/AddPerson';
 import Home from '../../views/HomeComponent/Home';
 import PersonListView from '../../views/PersonListView/PersonListView';
@@ -16,7 +18,7 @@ const Navbar = ({ PersonList, updatePersonList }) => {
         <div>
             <BrowserRouter>
                 <div id="navbar">
-                    <button className='bouton'>
+                    {/* <button className='bouton'>
                         <Link to="/">Home</Link>
                     </button>
                     <button className='bouton'>
@@ -24,15 +26,24 @@ const Navbar = ({ PersonList, updatePersonList }) => {
                     </button>
                     <button className='bouton'>
                         <Link to="/add">Add</Link>
-                    </button>
-                    <hr/>
+                    </button> */}
+                    <Link to="/">
+                        <FontAwesomeIcon icon={faHome} className="iconMenu" />
+                    </Link>
+                    <Link to="/list">
+                        <FontAwesomeIcon icon={faAddressCard} className="iconMenu" />
+                    </Link>
+                    <Link to="/add">
+                        <FontAwesomeIcon icon={faFolderPlus} className="iconMenu" />
+                    </Link>
+                    <hr />
                 </div>
-            
-            <Routes>
-                <Route path="/" element={<Home/>} />
-                <Route path="/list" element={<PersonListView PersonList={PersonList} updatePersonList={updatePersonList}/>} />
-                <Route path="/add" element={<AddPerson PersonList={PersonList} updatePersonList={updatePersonList}/>} />
-            </Routes>
+
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/list" element={<PersonListView PersonList={PersonList} updatePersonList={updatePersonList} />} />
+                    <Route path="/add" element={<AddPerson PersonList={PersonList} updatePersonList={updatePersonList} />} />
+                </Routes>
             </BrowserRouter>
 
             <div className="container">

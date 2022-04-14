@@ -1,0 +1,10 @@
+.iconMenu{
+    font-size: 35px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-left: 20px;
+    color: rgb(40, 44, 52);
+}
+.iconMenu:hover{
+    color:orangered;
+}
