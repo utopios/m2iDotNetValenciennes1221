@@ -1,4 +1,6 @@
 import React, { PureComponent } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck, faPenToSquare, faTrash } from "@fortawesome/free-solid-svg-icons";
 
 class Todo extends PureComponent {
 
@@ -10,31 +12,38 @@ class Todo extends PureComponent {
         }
     }
 
-    changeStatus = () => {        
-        const status = this.props.todo.status === 'done' ? 'undone' : 'done'
-        this.props.changeStatus(this.props.todo.id, status)
+    changeStatus = () => {
+        const status = this.props.todo.status === 'done' ? 'undone' : 'done';
+        this.props.changeStatus(this.props.todo.id, status);
+        this.forceUpdate();
     }
 
     renderDoneOrUndoneButton = () => {
         console.log(this.props.todo);
-        if (this.props.todo.status === 'done') {
-            return (
-                <button onClick={this.changeStatus} className="btn btn-success m-1">done</button>
-            )
-        }
-        else {
-            return (
-                <button onClick={this.changeStatus} className="btn btn-danger m-1">undone</button>
-            )
-        }
+        return this.props.todo.status === 'done' ?
+            <FontAwesomeIcon
+                icon={faCheck}
+                style={{ color: 'green', fontSize: '25px' }}
+                onClick={this.changeStatus}
+            />
+            :
+            <FontAwesomeIcon
+                icon={faCheck}
+                style={{ color: 'red', fontSize: '25px' }}
+                onClick={this.changeStatus}
+            />
+        // <button onClick={this.changeStatus} className="btn btn-success m-1">done</button>
+        // :
+        // <button onClick={this.changeStatus} className="btn btn-danger m-1">undone</button>           
     }
+
 
     validEditTodo = (e) => {
         e.preventDefault();
-        this.props.editTodo(this.props.todo.id, this.state.editTodoContent)
+        this.props.editTodo(this.props.todo.id, this.state.editTodoContent);
         this.setState({
             edit: false
-        })
+        });
     }
 
     EditTodo = () => {
@@ -58,9 +67,9 @@ class Todo extends PureComponent {
         }
     }
 
-    renderContentTodo = () =>{
-        return(
-            <div onClick={this.changeStatus} className={this.props.todo.status === 'done'? 'btn col-6 text-success' : 'btn col-6 text-danger'}>
+    renderContentTodo = () => {
+        return (
+            <div onClick={this.changeStatus} className={(this.props.todo.status === 'done') ? 'btn col-6 text-success' : 'btn col-6 text-danger'}>
                 {this.props.todo.content}
             </div>
         )
@@ -70,21 +79,39 @@ class Todo extends PureComponent {
     render() {
         return (
             <div className='row'>
-               {this.renderTodo()}
-               <div className="col-2">
-                   {this.renderDoneOrUndoneButton()}
-               </div>
-               <div className="col-2">
-                   <button className='btn btn-primary' onClick={ () => {
-                       this.setState({
-                           edit:true
-                       })
-                   }}>Edit</button>
-               </div>
-               <div className='col-2'>
-                    <button className='btn btn-primary' onClick={() => {
+                <div className="col-9">
+                    {this.renderTodo()}
+                </div>
+                <div className="col-1">
+                    {this.renderDoneOrUndoneButton()}
+                </div>
+                <div className="col-1">
+                    {/* <button className='btn btn-warning' onClick={() => {
+                        this.setState({
+                            edit: true
+                        })
+                    }}>Edit</button> */}
+                    <FontAwesomeIcon
+                        icon={faPenToSquare}
+                        style={{ color: 'rgb(40, 44, 52)', fontSize: '25px' }}
+                        onClick={() => {
+                            this.setState({
+                                edit: true
+                            })
+                        }}
+                    />
+                </div>
+                <div className='col-1'>
+                    {/* <button className='btn btn-danger' onClick={() => {
                         this.props.deleteTodo(this.props.todo.id)
-                    }}>delete</button>
+                    }}>delete</button> */}
+                    <FontAwesomeIcon
+                        icon={faTrash}
+                        style={{ color: 'rgb(40, 44, 52)', fontSize: '25px' }}
+                        onClick={() => {
+                            this.props.deleteTodo(this.props.todo.id)
+                        }}
+                    />
                 </div>
             </div>
         );

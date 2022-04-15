@@ -27,12 +27,10 @@ class ListTodoView extends PureComponent {
 
     deleteTodo = (id) => {
         let tmpTodos = []
-        for (let todo of this.state.todos) {
-            
+        for (let todo of this.state.todos) {            
             if (todo.id != id) {
                 tmpTodos.push(todo)
             }
-
         }
         this.setState({
             todos: tmpTodos
@@ -40,10 +38,10 @@ class ListTodoView extends PureComponent {
     }
 
     changeStatus = (id, newStatus) => {
-        console.log("Dans TodolistView id: "+id+" new Status : " +newStatus);
+        //console.log("Dans TodolistView id: "+id+" new Status : " +newStatus);
         let tmpTodos = []
         for(let todo of this.state.todos) {            
-            if(todo.id === id){
+            if(todo.id == id){
                 todo.status = newStatus
             }
             tmpTodos.push(todo)
